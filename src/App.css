@@ -1,0 +1,76 @@
+/* Color palette */
+:root{
+  --naranja: #EE7553;
+  --verde: #0C7483;
+  --verde-oscuro: #094c56;
+  --gris: #9A9898;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: local('Myriad Pro'), url(./assets/fonts/MyriadPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: local('Myriad Pro'), url(./assets/fonts/MyriadPro-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'), url(./assets/fonts/Calibri.ttf) format('truetype');
+}
+
+
+body{
+  margin: 0;
+}
+
+/* CSSTransition Group animation styles */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

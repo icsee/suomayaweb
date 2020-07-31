@@ -1,0 +1,11 @@
+.dots{
+  width: 40px;
+  justify-content: space-between !important;
+}
+
+.dot{
+  width: 8px;
+  height: 8px;
+  background-color: var(--naranja);
+  border-radius: 50%;
+}

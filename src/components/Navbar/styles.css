@@ -1,0 +1,51 @@
+.navbar{
+  height: 80px;
+  justify-content: space-between !important;
+  padding: 7px 40px 3px 20px;
+  /* border: 1px solid red; */
+}
+
+
+.navbar.home .menu{
+  width: 530px;
+}
+
+.menu{
+  /* width: 561px; */
+  width: 530px;
+  height: 100%;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-family: 'Myriad Pro';
+}
+
+.menu a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  height: 100%;
+  /* letter-spacing: 2px; */
+  transition: .2s;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid transparent;
+}
+
+.menu a:hover{
+  /* border-bottom: 5px solid var(--naranja); */
+  color: var(--naranja)
+}
+
+.menu a.selected:hover{
+  color: white !important;
+}
+
+.menu a.selected{
+  border-bottom: 5px solid var(--naranja);
+}
+
+.navbar.mobile{
+  flex-direction: column !important;
+}

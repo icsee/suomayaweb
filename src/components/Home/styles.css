@@ -1,0 +1,138 @@
+.semilleros-home{
+  margin: 33px 0;
+}
+
+.title-home{
+  font-size: 30px;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  color: var(--verde);
+  margin: 30px 0 0 0;
+}
+
+.text-home{
+  width: 700px;
+  margin: 20px 0 25px 0;
+  color: var(--gris);
+  font-family: 'Calibri';
+  font-size: 21px;
+  text-align: center;
+}
+
+.semilleros-home-icons{
+  justify-content: space-between !important;
+  width: 900px;
+  margin-bottom: 30px;
+}
+
+.semilleros-home-icon p{
+  width: 150px;
+  color: var(--naranja);
+  margin: 0;
+  font-family: 'Calibri';
+  font-weight: bold;
+  text-align: center;
+}
+
+.semilleros-home button{
+  margin-bottom: 33px;
+}
+
+.revista-home{
+  width: 900px;
+  margin: 0 auto;
+  justify-content: space-between !important;
+}
+
+.info-revista-home{
+  width: 400px;
+}
+
+.revista-home img{
+  width: 300px;
+}
+
+.line{
+  border: 0; 
+  height: 0; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-revista-home p{
+  width: 480px;
+}
+
+.revista-home{
+  margin-bottom: 66px;
+  margin-top: 66px;
+}
+
+@media screen and (max-width: 1000px) {
+  .semilleros-home-icons{
+    width: 70vw;
+    justify-content: center !important;
+  }
+
+  .semilleros-home-icon img{
+    width: 130px;
+  }
+
+  .revista-home{
+    width: 80vw;
+  }
+
+  .info-revista-home{
+    width: 42vw;
+  }
+  
+  .revista-home img{
+    width: 30vw;
+  }
+
+  .info-revista-home p{
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .semilleros-home .text-home{
+    width: 70vw;
+  }
+
+  .semilleros-home-icon img{
+    width: 100px;
+  }
+
+  .revista-home {
+    flex-direction: column !important;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .semilleros-home-icon p{
+    width: 130px;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+  .semilleros-home-icons {
+    width: 370px;
+    flex-wrap: wrap;
+  }
+
+  .text-home{
+    font-size: 16px;
+  }
+
+  .info-revista-home{
+    width: 200px;
+  }
+  
+  .info-revista-home p{
+    width: 70vw;
+  }
+
+}

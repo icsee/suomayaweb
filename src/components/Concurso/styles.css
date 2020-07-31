@@ -1,0 +1,77 @@
+.concurso {
+  width: 1100px;
+  padding: 45px 0;
+  margin: 0 auto;
+}
+
+.concurso-header{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.concurso-header h1{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 50px;
+  margin: 25px 0 15px 0;
+  text-align: center;
+}
+
+.concurso-header p,
+.concurso-detail p{
+  color: var(--gris);
+  font-family: 'Calibri';
+  font-size: 19px;
+  margin: 0;
+  white-space:pre-wrap;
+}
+
+.concurso-content{
+  width: 800px;
+  margin: 0 auto;
+  align-items: flex-start !important;
+}
+
+.concurso-content h2{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 35px;
+  margin: 25px 0 0 0;
+}
+
+.concurso-content a{
+  align-self: center !important;
+}
+
+.concurso-detail {
+  margin: 20px 0;
+}
+
+.concurso-detail .title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .concurso {
+    width: 80vw;
+    padding: 30px;
+  }
+  .concurso-header{
+    width: 60vw;
+  }
+  .concurso-content{
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .concurso h1{
+    font-size: 30px;
+  }
+  .concurso p{
+    font-size: 17px;
+  }
+}

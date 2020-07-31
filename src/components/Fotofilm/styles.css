@@ -1,0 +1,81 @@
+.fotofilm {
+  width: 1100px;
+  padding: 45px 0;
+  margin: 0 auto;
+}
+
+.fotofilm-header{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.fotofilm-header h1{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 50px;
+  margin: 25px 0 15px 0;
+  text-align: center;
+}
+
+.fotofilm-header p{
+  color: var(--gris);
+  font-family: 'Calibri';
+  font-size: 19px;
+  margin: 0;
+  text-align: center;
+}
+
+.fotofilm-content{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.fotofilm-content h2{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 35px;
+  margin: 35px 0;
+  text-align: center;
+}
+
+.fotofilm-categories{
+  width: 680px;
+  margin: 0 auto;
+  justify-content: space-between !important;
+}
+
+.fotofilm-category img{
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .fotofilm {
+    width: 80vw;
+    padding: 0;
+  }
+  .fotofilm-header{
+    width: 60vw;
+  }
+  .fotofilm-content{
+    width: 55vw;
+  }
+  .fotofilm-categories{
+    width: 50vw;
+    flex-direction: column !important;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fotofilm h1{
+    font-size: 30px;
+  }
+  .fotofilm h2{
+    font-size: 25px;
+  }
+  .fotofilm p{
+    font-size: 17px;
+  }
+}

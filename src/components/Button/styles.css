@@ -1,0 +1,72 @@
+.button{
+  text-align: center;
+  padding: 5px 0 8px 0;
+  border: none;
+  color: white;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: 0;
+  transition: .2s;
+  will-change:transform;
+  background: var(--naranja);
+  font-family: 'Calibri'
+}
+
+a.button{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: 1px;
+  width: 320px;
+  height: 37px;
+  font-weight: bold;
+}
+
+.button:active{
+  transform: scale(.9);
+}
+
+.button.big{
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  width: 290px;
+  height: 50px;
+}
+
+.button.classic{
+  font-size: 19px;
+  letter-spacing: 1px;
+  width: 320px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.button.small{
+  font-size: 15px;
+  /* letter-spacing: 1px; */
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px){
+  a.button{
+    width: 270px;
+    font-size: 16px;
+  }
+
+  .button.classic{
+    font-size: 16px;
+    width: 250px;
+  }
+
+  .button.big{
+    font-size: 17px;
+    width: 230px;
+  }
+}

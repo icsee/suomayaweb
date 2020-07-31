@@ -1,0 +1,226 @@
+.semillero-detail{
+  width: 100%;
+}
+
+.semillero-header{
+  width: 1100px;
+  padding: 45px 0;
+}
+
+.semillero-header img{
+  width: 200px;
+}
+
+.semillero-header .innovatics{
+  width: 500px;
+}
+
+.semillero-header .neurocomarketing{
+  width: 700px;
+}
+
+.semillero-header .siam{
+  width: 500px;
+}
+
+.semillero-header .aleph{
+  width: 200px;
+}
+
+.semillero-header .industriascreativas{
+  width: 250px;
+}
+
+.semillero-header p{
+  color: var(--gris);
+  font-family: 'Calibri';
+  font-size: 19px;
+  margin: 0;
+}
+
+.semillero-header h1{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 50px;
+  margin: 25px 0 25px 0;
+}
+
+.semillero-team{
+  width: 100%;
+  background: var(--verde) url('../../assets/img/suomaya2.png');
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.team-content{
+  width: 1100px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.team-content h1{
+  margin: 0;
+  color: white;
+  font-family: 'Calibri';
+  font-size: 28px;
+  letter-spacing: 2px;
+  align-self: flex-start;
+}
+
+.team-members{
+  justify-content: space-between !important;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.member{
+  font-family: 'Calibri';
+  color: white;
+}
+
+.member img{
+  width: 180px;
+  border-radius: 100%;
+}
+
+.member-name{
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.member-detail{
+  margin: 0;
+  font-size: 14px;
+}
+
+.semillero-join{
+  width: 1100px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+.semillero-join h1{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0 0 35px 0;
+}
+
+.semillero-join p {
+  color: var(--gris);
+  font-family: 'Calibri';
+  font-size: 19px;
+  margin: 0;
+  width: 700px;
+  text-align: center;
+}
+
+.semillero-join h2{
+  color: var(--naranja);
+  font-family: 'Calibri';
+  font-size: 40px;
+  text-align: center;
+  margin: 35px 0 0 0;
+}
+
+@media screen and (max-width: 1200px){
+  .semillero-header p{
+    width: 80vw;
+    text-align: center;
+  }
+
+  .team-content{
+    width: 85vw;
+  }
+
+  .semillero-join{
+    width: 80vw;
+  }
+
+  .semillero-join h1{
+    text-align: center;
+  }
+
+  .semillero-join p {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1000px){
+
+  .team-members{
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+  }
+
+  .member{
+    margin-top: 20px;
+    width: 220px;
+  }
+
+  .member img{
+    width: 150px;
+  } 
+}
+
+@media screen and (max-width: 600px){
+  .semillero-header h1{
+    font-size: 40px;  
+  }
+
+  .semillero-header p{
+    font-size: 17px;
+  }
+
+  .semillero-join h1{
+    font-size: 40px;
+  }
+
+  .semillero-join p{
+    font-size: 17px;
+  }
+
+  .semillero-join h2{
+    font-size: 35px;
+  }
+
+  .member{
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  .semillero-header img{
+    width: 200px !important;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  .semillero-header h1{
+    font-size: 30px;  
+  }
+
+  .semillero-header p{
+    font-size: 14px;
+  }
+
+  .semillero-join h1{
+    font-size: 30px;
+  }
+
+  .semillero-join p{
+    font-size: 14px;
+  }
+
+  .semillero-join h2{
+    font-size: 20px;
+  }
+
+  .member{
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+}
