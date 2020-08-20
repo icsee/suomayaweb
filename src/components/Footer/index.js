@@ -61,7 +61,7 @@ const ContactBox = () =>
 
 const Privacy = () =>
   <div className="privacy-box">
-    SENA CGMLTI 2019 Copyright © 2019 Todos los derechos reservados
+    SENA CGMLTI 2020 Copyright © 2020 Todos los derechos reservados
   </div>
 
 const Contact = () =>
