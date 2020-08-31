@@ -22,3 +22,54 @@
     font-size: 30px;
   }
 }
+
+.proyectos{
+  padding: 50px 0;
+  /* border: 1px solid red; */
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.proyecto img{
+  width: 110px;
+  margin-right: 20px;
+  height: 130px;
+ 
+ }
+
+ 
+.fila hr{
+  border: 0; 
+  height: 0; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.fila{
+  align-items: flex-start !important;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+.proyecto p{
+  font-family: 'Calibri';
+  color: var(--verde);
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.proyecto{
+  width: 600px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.itemproyecto{
+  flex-direction: row;
+  justify-content: flex-start !important;
+  margin: 0 30px 10px 0
+}
