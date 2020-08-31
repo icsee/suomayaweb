@@ -2,6 +2,7 @@ import React from 'react'
 import './styles.css'
 import Button from '../Button'
 import {  getProyecto } from '../../utils/proyectos'
+import { Link } from 'react-router-dom'
 
 const listProyecos = ['logistica', 'blockchain', 'iot', 'energia']
 
@@ -19,13 +20,25 @@ class Proyectos extends React.Component {
                   <section key={item} className="fila column">
                     <div className="proyecto">
                     <div className="itemproyecto row">
-                      <img src={proyecto.icon} alt={proyecto.title} />
+                      <img src={proyecto.icon} alt={proyecto.title} width="110px" height="130px" />
                       <div>
 
                         <p> {proyecto.title}</p>
-                        <Button  variant="small">
+                      {proyecto.url != 'https://www.suomaya.co/' &&
+                          <a href={proyecto.url} target="_blank" >
+                          <input type ='button' value="Ir al proyecto" className="button small"/>
+                          </a>  
+                        
+                      }
+                      {proyecto.url == 'https://www.suomaya.co/' &&
+                          <Button variant="small">
                             Ir al proyecto
-                        </Button>
+                            </Button>  
+                        
+                      }
+
+                       
+                        
                       </div>
                       </div>
                     </div>
