@@ -5,6 +5,8 @@ import Home from './components/Home'
 import Semilleros from './components/Semilleros'
 import Revista from './components/Revista'
 import Proyectos from './components/Proyectos'
+import ProyectoLogistica from './components/Proyecto/Logistica'
+import ProyectoInventarios from './components/Proyecto/Inventarios'
 import Simposio from './components/Simposio'
 import TopSection from './components/TopSection'
 import Footer from './components/Footer'
@@ -34,6 +36,8 @@ class App extends Component {
                     <Route path="/semilleros" render={() => <Semilleros  />} />
                     <Route path="/revista" render={() => <Revista />}/>
                     <Route path="/proyectos" render={() => <Proyectos />}/>
+                    <Route path="/proyecto/logistica" render={() => <ProyectoLogistica />}/>
+                    <Route path="/proyecto/inventarios" render={() => <ProyectoInventarios />}/>
                     <Route path="/simposio" render={() => <Simposio />}/>
                     <Route path="/fotofilm" render={() => <Fotofilm />}/>
                     <Route path="/cortometraje" render={() => <Concurso category="cortometraje" />}/>

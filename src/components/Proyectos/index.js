@@ -24,14 +24,14 @@ class Proyectos extends React.Component {
                       <div>
 
                         <p> {proyecto.title}</p>
-                      {proyecto.url != 'https://www.suomaya.co/' &&
+                      {proyecto.type == 'external' &&
                           <a href={proyecto.url} target="_blank" >
                           <input type ='button' value="Ir al proyecto" className="button small"/>
                           </a>  
                         
                       }
-                      {proyecto.url == 'https://www.suomaya.co/' &&
-                          <Button variant="small">
+                      {proyecto.type == 'intern' &&
+                          <Button variant="small" route={proyecto.url}>
                             Ir al proyecto
                             </Button>  
                         

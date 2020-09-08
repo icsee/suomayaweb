@@ -36,6 +36,7 @@
   font-family: 'Calibri';
   font-size: 19px;
   margin: 0;
+  text-align: justify;
 }
 
 .semillero-header h1{
@@ -77,11 +78,17 @@
 .member{
   font-family: 'Calibri';
   color: white;
+  width: 100%;
 }
 
 .member img{
   width: 180px;
   border-radius: 100%;
+}
+
+.siclog{
+  border-radius: 7px;
+
 }
 
 .member-name{
@@ -93,6 +100,9 @@
 .member-detail{
   margin: 0;
   font-size: 14px;
+  
+  text-align: center;
+
 }
 
 .semillero-join{

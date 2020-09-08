@@ -1,4 +1,4 @@
-import logistica from '../assets/img/logistica.svg'
+import logistica from '../assets/img/wifi.png'
 import marketing from '../assets/img/marketing.svg'
 import ti from '../assets/img/ti.svg'
 import ic from '../assets/img/ic.svg'
@@ -7,7 +7,7 @@ import innovatics from '../assets/img/innovatics.png'
 import siam from '../assets/img/siam.png'
 import neurocomarketing from '../assets/img/neurocomarketing.png'
 import industriasc from '../assets/img/ic.png'
-import siclog from '../assets/img/siclog.jpg'
+import siclog from '../assets/img/LogoSICLOG.png'
 
 export function getLinea(linea){
   if(linea === 'logistica'){
@@ -17,7 +17,7 @@ export function getLinea(linea){
       semilleros: [
         {
           name: 'Siclog',
-          description: 'La línea de investigación está orientada la búsqueda de mejores prácticas logísticas para el desarrollo de cadenas de suministro en escenarios globalizados.',
+          description: 'La línea de investigación está orientada a la búsqueda de mejores prácticas logísticas en el desarrollo de redes de suministro en escenarios globalizados y sostenibles.',
           logo: siclog
         }
       ]

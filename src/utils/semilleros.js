@@ -1,5 +1,9 @@
-import logistica from '../assets/img/siclog.jpg'
+import logistica from '../assets/img/LogoSICLOG.png'
 import avatar from '../assets/img/avatar.png'
+import avatarCristina from '../assets/img/AvatarCristinaRamírez.PNG'
+import avatarMonica from '../assets/img/AvatarMonicaDiaz.PNG'
+import avatarfb from '../assets/img/facebook.jpg'
+import avatarweb from '../assets/img/paginaweb.png'
 import aleph from '../assets/img/aleph.png'
 import innovatics from '../assets/img/innovatics.png'
 import siam from '../assets/img/siam.png'
@@ -47,32 +51,31 @@ const getSemillero = (semillero) => {
       logo: logistica,
       name: 'Siclog',
       contact: 'jjleuro@sena.edu.co',
-      description: `La línea de investigación está orientada la búsqueda de mejores prácticas logísticas para el desarrollo de cadenas de suministro en escenarios globalizados. Las nuevas expectativas de los mercados y las presiones tecnológicas del medio en el que se desarrollan las organizaciones, generan que los enfoques de la gestión estén reinventándose constantemente (García, 2006).
-      El modelo de cadena de suministros funciona como una red integrada por varios proveedores, fabricantes, distribuidores, y consumidores finales, coordinados armoniosamente para satisfacer los requerimientos del cliente, con el menor costo y tiempo posible (Whitman et al, 1998, Ballou, 2000). La complejidad de su gestión depende de múltiples factores y no puede desligarse del desarrollo de sistemas logísticos para lograr el flujo eficiente de materiales, información y capital entre los actores involucrados.`,
+      description: `La línea de investigación está orientada la búsqueda de mejores prácticas logísticas para el desarrollo de cadenas de suministro en escenarios globalizados. Las nuevas expectativas de los mercados y las presiones tecnológicas del medio en el que se desarrollan las organizaciones, generan que los enfoques de la gestión estén reinventándose constantemente (García, 2006). El modelo de cadena de suministros funciona como una red integrada por varios proveedores, fabricantes, distribuidores, y consumidores finales, coordinados armoniosamente para satisfacer los requerimientos del cliente, con el menor costo y tiempo posible (Whitman et al, 1998, Ballou, 2000). La complejidad de su gestión depende de múltiples factores y no puede desligarse del desarrollo de sistemas logísticos para lograr el flujo eficiente de materiales, información y capital entre los actores involucrados.`,
       team: [
         {
-          name: 'John Leuro',
-          mail: 'jjleuro@sena.edu.co',
-          detail: 'Especialista en logística',
-          avatar: avatar,
+          name: 'Cristina Ramírez Meneses',
+          mail: 'cramirezm@sena.edu.co',
+          detail: 'Líder de grupo de Investigación, Líder de línea de Investigación, investigadora',
+          avatar: avatarCristina,
         },
         {
-          name: 'Cristina Ramirez',
-          mail: 'cramirez_m@misena.edu.co',
-          detail: 'Especialista en logística',
-          avatar: avatar,
+          name: 'Mónica Jazmín Díaz',
+          mail: 'mjdiazr@sena.edu.co',
+          detail: 'Apoyo en investigación',
+          avatar: avatarMonica,
         },
         {
-          name: 'Ginna Ramirez ',
-          mail: 'ginnaramirez@sena.edu.co',
-          detail: 'Especialista en logística',
-          avatar: avatar,
+          name: 'Semillero SICLOG',
+          mail: 'https://www.facebook.com/Semillero.Siclog/',
+          detail: '',
+          avatar: avatarfb,
         },
         {
-          name: 'Alejandra Bermudez ',
-          mail: 'alejandrabermudez@sena.edu.co',
-          detail: 'Especialista en logística',
-          avatar: avatar,
+          name: 'Página web ',
+          mail: 'https://siclog.wixsite.com/siclog/por-que',
+          detail: '',
+          avatar: avatarweb,
         }
       ]
     }

@@ -27,6 +27,10 @@
   font-size: 50px;
   margin: 0 0 15px 0;
 }
+.semillero-img{
+  border-radius: 6px;
+
+}
 
 .semilleros-header p{
   color: var(--gris);
@@ -97,6 +101,7 @@
   font-size: 16px;
   margin: 0 0 10px 0;
   width: 380px;
+  text-align: justify;
 }
 
 @media screen and (max-width: 720px) {

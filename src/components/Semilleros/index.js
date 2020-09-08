@@ -34,7 +34,7 @@ class Semilleros extends React.Component {
                   {
                     linea.semilleros.map((item) => (
                       <div key={item.name} className="semillero row">
-                        <img src={item.logo} alt="logo" />
+                        <img src={item.logo} alt="logo"  className="semillero-img"/>
                         <div>
                           <h1>{item.name}</h1>
                           <p>{item.description}</p>

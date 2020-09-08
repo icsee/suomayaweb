@@ -1,0 +1,34 @@
+
+
+.info h1{
+    color: var(--verde);
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+  .info h2{
+    color: var(--verde);
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+.space{
+    margin: 20px 12% 10% 12%;
+}
+  .info p{
+    font-family: 'Calibri';
+    color: var(--gris);
+    margin: 10px 0 10px 0;
+    text-align: justify;
+  }
+.imageInventario{
+
+margin: 0px 80px 0px 0px;
+
+}
+.detalle{
+  margin: 7% 0px 0px 0px;
+
+}

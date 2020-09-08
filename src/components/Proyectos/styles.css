@@ -32,10 +32,10 @@
 }
 
 .proyecto img{
-  width: 110px;
+  width: 120px;
   margin-right: 20px;
   height: 130px;
-  border-radius: 8px;
+  border-radius: 7px;
  }
 
  
@@ -61,6 +61,7 @@
   color: var(--verde);
   font-size: 16px;
   margin: 0 0 10px 0;
+  text-align: justify;
 }
 
 .proyecto{

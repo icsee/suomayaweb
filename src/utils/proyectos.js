@@ -13,31 +13,36 @@ export function getProyecto(proyecto){
             return {
                 title: 'Aplicación de un modelo logístico 4.0 para la gestión de inventarios de productos en cadena frio',
                 icon: iconLogistica,
-                url: 'https://www.suomaya.co/'
+                url: 'proyecto/logistica',
+                type:'intern'
             };
         case 'blockchain':
             return {
                 title: 'Modelo de gestión de inventarios en cadena de frio a través de Blockchain e IoT ',
                 icon: iconBlockhain,
-                url: 'https://www.suomaya.co/'
+                url: 'proyecto/inventarios',
+                type:'intern'
             };  
         case 'iot': 
         return {
             title: 'Sistema de evalución y gestión de tecnologías inalámbricas orientadas a iot y big data para manejo el manejo e integración de aplicaciones móviles',
             icon: iconIOT,
-            url: 'https://interopbigdatafront.azurewebsites.net/index.html'
+            url: 'https://interopbigdatafront.azurewebsites.net/index.html',
+            type:'external'
         }; 
         case 'energia': 
         return {
             title: 'Proyecto paneles',
             icon: iconEnergia,
-            url: 'https://www.suomaya.co/'
+            url: 'proyectos',
+            type:'intern'
         };
         default: 
             return {
                 title: 'default',
                 icon: iconLogistica,
-                url: 'https://www.suomaya.co/'
+                url: 'proyecto/logistica'
+                ,type:'intern'
             };
     }
     
