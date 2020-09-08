@@ -2,7 +2,7 @@
 #cambio
 # dependencies
 /node_modules
-
+/src/assets/video
 # testing
 /coverage
 
