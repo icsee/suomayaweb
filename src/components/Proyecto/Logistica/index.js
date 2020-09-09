@@ -10,8 +10,8 @@ class ProyectoLogistica extends React.Component {
   }
   render() {
     var x =this.state.width;
-    var tipo=x>1000 ? 'row': 'column'; 
-    var name=x>1000 ? 'react-player': ''; 
+    var tipo=x>1000 ? 'column': 'column'; 
+    var name=x>1000 ? '': ''; 
     var name2=x>1000 ? 'info space': 'info'; 
     return(
       <div className={name2}>
