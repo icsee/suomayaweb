@@ -25,7 +25,7 @@ class ProyectoInventarios extends React.Component {
                 <p>En Colombia, más del 90% de las empresas corresponden al sector MyPyme, convirtiéndolo en uno de los sectores más relevantes para la economía nacional. Sin embargo, la adopción de tecnologías en las micro, pequeñas y medianas empresas es mínima incidiendo en la productividad y competitividad. El presente proyecto tiene como objeto el diseño de un modelo para empresas de este sector que facilite la captura, trasmisión y procesamiento de los datos en el proceso de inventarios y transporte de productos en cadena de frío, a través de la integración de tecnologías avanzadas como IoT y Blockchain; garantizando la trazabilidad de la mercancía y el control de variables como la temperatura y humedad.
                     </p>
                     <h2>
-                    Animación
+                   
                     </h2>
           
                     </div>

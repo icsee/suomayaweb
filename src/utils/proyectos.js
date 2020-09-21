@@ -1,6 +1,6 @@
 
 
-import iconLogistica from '../assets/img/proyectoBlockchain.png'
+import iconLogistica from '../assets/img/proyectoBlockchain2.png'
 import iconBlockhain from '../assets/img/proyectoLogistica.png'
 import iconIOT from '../assets/img/proyectoIOT.png'
 import iconEnergia from '../assets/img/proyectoEnergia.png'

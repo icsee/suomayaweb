@@ -3,7 +3,8 @@ import Button from '../Button'
 import './styles.css'
 import { getLinea } from '../../utils/lineas'
 
-const lineas = ['logistica', 'mercadeo', 'creativas', 'tics']
+//const lineas = ['logistica', 'mercadeo', 'creativas', 'tics']
+const lineas = ['logistica', 'tics']
 
 class Semilleros extends React.Component {
   componentDidMount() {

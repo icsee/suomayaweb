@@ -16,31 +16,31 @@ const getSemillero = (semillero) => {
     return {
       logo: innovatics,
       name: 'Innovatics',
-      contact: 'angela.montoyac@misena.edu.co',
+      contact: 'nagudeloc@sena.edu.co',
       description: 'Somos un equipo de aprendices e instructores del Centro de Gestión de Mercados, Logística y Tecnologías de la Información, de la Regional Distrito Capital -SENA, que promueven la innovación e investigación, mediante el estudio sistemático y la aplicación de nuevas tecnologías en los procesos de mantenimiento de infraestructura de TI, la gestión de redes de datos, el diseño y el desarrollo de software y videojuegos. Actualmente enfocados a la industria 4.0, realidad virtual inmersiva y aumentada, Big Data, IoT y Machine Learning.',
       team: [
         {
-          name: 'Ángela Montoya',
-          mail: 'angela.montoyac@misena.edu.co',
+          name: 'Nelson Giovanni Agudelo C.',
+          mail: 'nagudeloc@sena.edu.co',
+          detail: 'Especialista en Telecomunicaciones y Teleinformática',
+          avatar: avatar,
+        },
+        {
+          name: 'David Cáceres',
+          mail: 'dlcaceres04@misena.edu.co',
           detail: 'Especialista en teleinformática',
           avatar: avatar,
         },
         {
-          name: 'Nelson Agudelo',
-          mail: 'nelsongiovani@gmail.com',
-          detail: 'Especialista en teleinformática',
+          name: 'Gonzalo Salgado ',
+          mail: 'gonzalo8416@misena.edu.co',
+          detail: 'Diseñador Gráfico  ',
           avatar: avatar,
         },
         {
-          name: 'Jose Silva',
-          mail: 'ja.silvarojas@gmail.com ',
-          detail: 'Especialista en teleinformática',
-          avatar: avatar,
-        },
-        {
-          name: 'Cristian Buitrago',
-          mail: 'cristianbuitrago@sena.edu.co',
-          detail: 'Especialista en teleinformática',
+          name: 'Julián Urrea ',
+          mail: 'jrurrea0@misena.edu.co',
+          detail: 'Magister en Programación de Videojuegos',
           avatar: avatar,
         }
       ]
@@ -50,7 +50,7 @@ const getSemillero = (semillero) => {
     return {
       logo: logistica,
       name: 'Siclog',
-      contact: 'jjleuro@sena.edu.co',
+      contact: 'cramirezm@sena.edu.co',
       description: `La línea de investigación está orientada la búsqueda de mejores prácticas logísticas para el desarrollo de cadenas de suministro en escenarios globalizados. Las nuevas expectativas de los mercados y las presiones tecnológicas del medio en el que se desarrollan las organizaciones, generan que los enfoques de la gestión estén reinventándose constantemente (García, 2006). El modelo de cadena de suministros funciona como una red integrada por varios proveedores, fabricantes, distribuidores, y consumidores finales, coordinados armoniosamente para satisfacer los requerimientos del cliente, con el menor costo y tiempo posible (Whitman et al, 1998, Ballou, 2000). La complejidad de su gestión depende de múltiples factores y no puede desligarse del desarrollo de sistemas logísticos para lograr el flujo eficiente de materiales, información y capital entre los actores involucrados.`,
       team: [
         {

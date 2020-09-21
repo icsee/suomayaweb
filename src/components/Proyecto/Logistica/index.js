@@ -39,6 +39,7 @@ class ProyectoLogistica extends React.Component {
                     <center>
                     <iframe src="https://sebasapk.github.io/ProblematicaCadenaDeFrio/" height="700" width="1000" frameborder="0"></iframe>  
                     </center>
+                   
                     </div>
               </div>
           </section>
