@@ -5,9 +5,12 @@ import image from '../../../assets/img/proyectoInventario.PNG'
 
 
 class ProyectoInventarios extends React.Component {
+
   componentDidMount() {
     window.scrollTo(0,0)
   }
+
+  
   render() {
     var x =this.state.width;
     var tipo=x>1000 ? 'row': 'column'; 

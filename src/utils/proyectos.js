@@ -27,8 +27,8 @@ export function getProyecto(proyecto){
         return {
             title: 'Sistema de evalución y gestión de tecnologías inalámbricas orientadas a iot y big data para manejo el manejo e integración de aplicaciones móviles',
             icon: iconIOT,
-            url: 'https://interopbigdatafront.azurewebsites.net/index.html',
-            type:'external'
+            url: 'proyecto/interoperabilidad',
+            type:'intern'
         }; 
         case 'energia': 
         return {
