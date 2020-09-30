@@ -34,7 +34,7 @@ export function getProyecto(proyecto){
         return {
             title: 'Proyecto paneles',
             icon: iconEnergia,
-            url: 'proyectos',
+            url: 'proyecto/paneles',
             type:'intern'
         };
         default: 
