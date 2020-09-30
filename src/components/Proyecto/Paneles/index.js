@@ -1,62 +1,59 @@
 import React from 'react'
 import './styles.css'
-import DankMemes from "./chart.js";
+
 
 
 import MapContainer from '../Interoperabilidad/map.js'
-import {Line} from 'react-chartjs-2';
+
+
+import { render } from "react-dom";
+
+import Chart from "./chart";
 
 class ProyectoInventarios extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { width: 0, height: 0
-    
-    ,
-     data:{
-      labels: ['a'],
-      datasets: [
-        {
-       label: 'temperatura',
-       fill: false,
-       data: [1],
-       backgroundColor: '#168ede',
-       borderColor: '#168ede'
-        },
-        {
-         label: 'humedad',
-         fill: false,
-         data: [],
-         backgroundColor: '#ff4017',
-         borderColor: '#ff4017'
-          }
-      ]
-       },
-        options:{
+    this.state =  {
+      lineChartData: {
+        type: 'line',
+      data: {
+       labels: [],
+       datasets: [
+         {
+        label: 'Temperatura',
+        fill: false,
+        data: [],
+        backgroundColor: '#168ede',
+        borderColor: '#168ede'
+         },
+         {
+          label: 'intensidad',
+          fill: false,
+          data: [],
+          backgroundColor: '#ff4017',
+          borderColor: '#ff4017'
+           }
+       ]
+        }
+      },
+      lineChartOptions: {
+        responsive: true,
         maintainAspectRatio: false,
         tooltips: {
-         enabled: false
-        },
-        legend: {
-         display: true,
-         position: 'bottom',
-         labels: {
-          fontColor: 'black'
-         }
+          enabled: true
         },
         scales: {
-          yAxes: [{
-           ticks: {
-            fontColor: "black"
-           }
-          }],
-          xAxes: [{
-         ticks: {
-          fontColor: "black",
-          beginAtZero: true
-         }
-          }]
+          xAxes: [
+            {
+              ticks: {
+                autoSkip: true,
+                maxTicksLimit: 10
+              }
+            }
+          ]
         }
-        }};
+      }
+    };
     
     
   
@@ -90,16 +87,20 @@ class ProyectoInventarios extends React.Component {
           <center>
           <section  className="column">          
             <div >   
+              <p>Smart and Clean energy</p>
             <p>
 
-            El sistema propuesto pretende incorporar tecnologías inalámbricas emergentes para aplicaciones de IoT desplegadas en el centro de formación. El Internet de las Cosas (IoT) es una evolución tecnológica que representa el futuro de la informática y las comunicaciones. Estas aplicaciones generalmente involucran sensores, visualización, medios de trasporte y almacenamiento, su desarrolló depende de la innovación técnica dinámica en una serie de campos importantes. Al incorporar el concepto de Big Data nos referimos al conjunto de datos o combinaciones de conjuntos de datos que se alojan en bases de datos, cuyo tamaño, complejidad y velocidad de crecimiento dificultan su captura, gestión, procesamiento y análisis, mediante tecnologías y herramientas convencionales.
+          Sistema de generación de energía solar fotovoltaica de 3Kw de potencia instalado en el Centro de Gestión de Mercados Logística y TI monitoreado con un sistema de tipo IoT compuesto por paneles monocristalinos y policristalinos.
 </p>
             <iframe src="https://sebasapk.github.io/Paneles-Solares/" height="700" width="1000" frameborder="0"></iframe>
             </div>
 
             <div className="chart-area-p" >
             <h2>Ambiente</h2>
-               <DankMemes/>
+                  <Chart
+                  data={this.state.lineChartData}
+                  options={this.state.lineChartOptions}
+                />
             </div>
             <div className="map-area">
            
@@ -127,8 +128,35 @@ class ProyectoInventarios extends React.Component {
 
    showData() {
      console.log('holap');
+     console.log(     this.state.lineChartData.data);
+     var x=Math.floor(Math.random() * 50) + 51  ;
+
+     const oldBtcDataSet = this.state.lineChartData.data.datasets[0];
+     const newBtcDataSet = { ...oldBtcDataSet };
+     newBtcDataSet.data.push(x);
+     
+
+     var oldlabel = this.state.lineChartData.labels;
+     var newLabel = { ...oldlabel };
+     var array= Object.values(newLabel);
+     console.log(      array);
+     var y =new Date().toLocaleTimeString();
+     array.push(y);
+     if (newBtcDataSet.data.length>10)
+     {
+      newBtcDataSet.data.shift(); 
+      array.shift(); 
+     }
+
+     const newChartData = {
+       ...this.state.lineChartData,
+       datasets: [newBtcDataSet],
+       labels: array};
+
+
+     this.setState({ lineChartData: newChartData });
    /*
-    var x=Math.floor(Math.random() * 50) + 51  ;
+    
 
     let chartTime = new Date();
     chartTime = chartTime.getHours() + ':' + ((chartTime.getMinutes() < 10) ? '0' + chartTime.getMinutes() : chartTime.getMinutes()) + ':' + ((chartTime.getSeconds() < 10) ? '0' + chartTime.getSeconds() : chartTime.getSeconds());
