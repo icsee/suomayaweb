@@ -1,128 +1,198 @@
 import React, { useEffect, useState } from 'react'
 import './styles.css'
-
 import {Line} from 'react-chartjs-2';
-
-import MapContainer from './map.js'
+import Chart from "../Paneles/chart";
+import MapContainer from './map.js';
+import SockJS from 'sockjs-client';
+import Stomp from 'stompjs';
 
 
 class ProyectoInteroperabilidad extends React.Component {
+
+
+  constructor(props) {
+    super(props);
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+
+    this.state =  {
+      valueRssiLora:'0DBi',
+      valueRssiBluetooh:'0DBi',
+      valueRssiWifi:'0DBi',
+      valueCSQ:'0DBi',
+      lineChartData: {
+        labels: [0],
+        datasets: [{
+          data: [0],
+          label: 'rssi-particle',
+          // backgroundColor: '#ff6600'
+          borderColor: '#F44436',
+          pointBackgroundColor: '#F44440'
+        },
+        {
+          data: [1],
+          label: 'rssi-lora',
+          //backgroundColor: '#ff6600',
+          borderColor: '#41D519',
+          pointBackgroundColor: '#229954'
+        },
+        {
+          data: [2],
+          label: 'rssi-bluetooth',
+          //backgroundColor: '#ff6600',
+          borderColor: ' #262c88',
+          pointBackgroundColor: '#1924d5'
+        },{
+          data: [3],
+          label: 'CSQ',
+          //backgroundColor: '#ff6600',
+        borderColor: '#f55a07',
+          pointBackgroundColor:'#f5c307'
+        },
+      
+      
+      ]
+      },
+      lineChartOptions: {
+        //animation: false,
+      maintainAspectRatio: false,
+        layout: {
+          padding: {
+            left: 10,
+            right: 25,
+            top: 25,
+            bottom: 0
+          }
+        },  
+        legend: {
+          display: false
+        },
+        responsive: true,
+      scales: {
+          xAxes: [{
+            time: {
+              unit: 'date'
+            },
+            gridLines: {
+              display: false,
+              drawBorder: false
+            },
+            ticks: {
+              maxTicksLimit: 7
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              maxTicksLimit: 5,
+              padding: 10,
+              // Include a dollar sign in the ticks
+              callback: function(value, index, values) {
+                return number_format(value);
+              }
+            },
+            gridLines: {
+              color: "rgb(234, 236, 244)",
+              zeroLineColor: "rgb(234, 236, 244)",
+              drawBorder: false,
+              borderDash: [2],
+              zeroLineBorderDash: [2]
+            }
+          }],
+        },
+      tooltips: {
+          backgroundColor: "rgb(255,255,255)",
+          bodyFontColor: "#858796",
+          titleMarginBottom: 10,
+          titleFontColor: '#6e707e',
+          titleFontSize: 14,
+          borderColor: '#dddfeb',
+          borderWidth: 1,
+          xPadding: 15,
+          yPadding: 15,
+          displayColors: false,
+          intersect: false,
+          mode: 'index',
+          caretPadding: 10,
+          callbacks: {
+            label: function(tooltipItem, chart) {
+              var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+              return datasetLabel + number_format(tooltipItem.yLabel);
+            }
+          }
+        }
+      }
+  
+     ,stompClient:null
+    };
+    
+  }
+  
+
   componentDidMount() {
     window.scrollTo(0,0);
     
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
+
+    var socket = new SockJS('https://suomayaback.azurewebsites.net/suomayaback-websocket');
+    this.state.stompClient = Stomp.over(socket);
+    this.state.stompClient.connect({}, frame=> {
+      //  setConnected(true);
+        console.log('Connected: ' + frame);
+        this.state.stompClient.subscribe('/topic/iot', e => {
+           
+       
+   //   const messageData = JSON.parse(e);
+   var  messageData = JSON.parse(e.body).content;
+
+          const message=JSON.parse( messageData.substring(0,messageData.search('}:')+1) );
+   console.log(message);
+
+
+
+      const oldBtcDataSet = this.state.lineChartData;
+      const newBtcDataSet = { ...oldBtcDataSet };
+      newBtcDataSet.datasets[0].data.push(message.rssiParticle);
+      newBtcDataSet.datasets[1].data.push(message.rssiLora);
+      newBtcDataSet.datasets[2].data.push(message.rssiBluetooth);
+      newBtcDataSet.datasets[3].data.push(message.lat);
+      
+      console.log(newBtcDataSet);
+      var oldlabel = this.state.lineChartData.labels;
+      var newLabel = { ...oldlabel };
+      var array= Object.values(newLabel);
+      
+      var y =new Date().toLocaleTimeString();
+      array.push(y);
+      if (newBtcDataSet.datasets[0].data.length>10)
+      {
+       newBtcDataSet.datasets[0].data.shift(); 
+       newBtcDataSet.datasets[1].data.shift(); 
+       newBtcDataSet.datasets[2].data.shift(); 
+       newBtcDataSet.datasets[3].data.shift(); 
+       array.shift(); 
+      }
+ 
+      const newChartData = {
+        ...this.state.lineChartData,
+        datasets: [newBtcDataSet.datasets[0],newBtcDataSet.datasets[1],newBtcDataSet.datasets[2],newBtcDataSet.datasets[3]],
+        labels: array};
+ 
+ 
+      this.setState({ lineChartData: newChartData,
+        valueRssiLora: message.rssiLora.toFixed(2)+' DBi',
+        valueRssiBluetooh: message.rssiBluetooth.toFixed(2)+' DBi',
+        valueRssiWifi: message.rssiParticle.toFixed(2)+' DBi',
+        valueCSQ: message.lat.toFixed(2)+' DBi'
+       });
+    });
+  });
+
    }
 
 
   render() {
     var x =this.state.width;
-    
-
-    const optionsAnimations = {
-      animation: false,
-    maintainAspectRatio: false,
-      layout: {
-        padding: {
-          left: 10,
-          right: 25,
-          top: 25,
-          bottom: 0
-        }
-      },  
-      legend: {
-        display: false
-      },
-      responsive: true,
-    scales: {
-        xAxes: [{
-          time: {
-            unit: 'date'
-          },
-          gridLines: {
-            display: false,
-            drawBorder: false
-          },
-          ticks: {
-            maxTicksLimit: 7
-          }
-        }],
-        yAxes: [{
-          ticks: {
-            maxTicksLimit: 5,
-            padding: 10,
-            // Include a dollar sign in the ticks
-            callback: function(value, index, values) {
-              return number_format(value);
-            }
-          },
-          gridLines: {
-            color: "rgb(234, 236, 244)",
-            zeroLineColor: "rgb(234, 236, 244)",
-            drawBorder: false,
-            borderDash: [2],
-            zeroLineBorderDash: [2]
-          }
-        }],
-      },
-    tooltips: {
-        backgroundColor: "rgb(255,255,255)",
-        bodyFontColor: "#858796",
-        titleMarginBottom: 10,
-        titleFontColor: '#6e707e',
-        titleFontSize: 14,
-        borderColor: '#dddfeb',
-        borderWidth: 1,
-        xPadding: 15,
-        yPadding: 15,
-        displayColors: false,
-        intersect: false,
-        mode: 'index',
-        caretPadding: 10,
-        callbacks: {
-          label: function(tooltipItem, chart) {
-            var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-            return datasetLabel + number_format(tooltipItem.yLabel);
-          }
-        }
-      }
-    }
-
-    const data = {
-      labels: [0],
-      datasets: [{
-        data: [0],
-        label: 'rssi-particle',
-        // backgroundColor: '#ff6600'
-        borderColor: '#F44436',
-        pointBackgroundColor: '#F44440'
-      },
-      {
-        data: [1],
-        label: 'rssi-lora',
-        //backgroundColor: '#ff6600',
-        borderColor: '#41D519',
-        pointBackgroundColor: '#229954'
-      },
-      {
-        data: [2],
-        label: 'rssi-bluetooth',
-        //backgroundColor: '#ff6600',
-        borderColor: ' #262c88',
-        pointBackgroundColor: '#1924d5'
-      },{
-        data: [3],
-        label: 'CSQ',
-        //backgroundColor: '#ff6600',
-      borderColor: '#f55a07',
-        pointBackgroundColor:'#f5c307'
-      },
-    
-    
-    ]
-    }
-      
-   
 
     return(
       <div className="space">
@@ -137,7 +207,7 @@ class ProyectoInteroperabilidad extends React.Component {
                         <div className="row no-gutters align-items-center">
                           <div className="col mr-2">
                             <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">CSQ 4G</div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800" id="csq">0DBi</div>
+                            <div className="h5 mb-0 font-weight-bold text-gray-800" id="csq">{this.state.valueCSQ}</div>
                           </div>
                           <div className="col-auto">
                             <i className="fas fa-rss fa-2x text-gray-300"></i>
@@ -154,7 +224,7 @@ class ProyectoInteroperabilidad extends React.Component {
                   <div className="row no-gutters align-items-center">
                     <div className="col mr-2">
                       <div className="text-xs font-weight-bold text-success text-uppercase mb-1">RSSI Lora</div>
-                      <div className="h5 mb-0 font-weight-bold text-gray-800" id="rssiLora">0DBi</div>
+                      <div className="h5 mb-0 font-weight-bold text-gray-800" id="rssiLora">{this.state.valueRssiLora}</div>
                     </div>
                     <div className="col-auto">
                       <i className="fas fa-rss fa-2x text-gray-300"></i>
@@ -173,7 +243,7 @@ class ProyectoInteroperabilidad extends React.Component {
                       <div className="text-xs font-weight-bold text-info text-uppercase mb-1" >RSSI BLUETOOTH</div>
                       <div className="row no-gutters align-items-center">
                         <div className="col-auto">
-                          <div className="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="rssiBLE">0DBi</div>
+                          <div className="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="rssiBLE">{this.state.valueRssiBluetooh}</div>
                         </div>
                        
                       </div>
@@ -193,7 +263,7 @@ class ProyectoInteroperabilidad extends React.Component {
                   <div className="row no-gutters align-items-center">
                     <div className="col mr-2">
                       <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">RSSI WI-FI</div>
-                      <div className="h5 mb-0 font-weight-bold text-gray-800" id="rssiWIFI">0DBi</div>
+                      <div className="h5 mb-0 font-weight-bold text-gray-800" id="rssiWIFI">{this.state.valueRssiWifi}</div>
                     </div>
                     <div className="col-auto">
                       <i className="fas fa-rss fa-2x text-gray-300"></i>
@@ -218,9 +288,10 @@ class ProyectoInteroperabilidad extends React.Component {
     
     <div className="card-body" >
     <div className="chart-area" >
-      <Line  data={data}  
-      options={optionsAnimations } 
-      />
+    <Chart
+                  data={this.state.lineChartData}
+                  options={this.state.lineChartOptions}
+                />
       </div>
     </div>
   </div>
@@ -297,17 +368,11 @@ class ProyectoInteroperabilidad extends React.Component {
   }
 
 
-  constructor(props) {
-    super(props);
-    this.state = { width: 0, height: 0 };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-
-    
-  }
-  
   
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
+    if (this.state.stompClient!=null)
+    this.state.stompClient.disconnect();
   }
   
   updateWindowDimensions() {

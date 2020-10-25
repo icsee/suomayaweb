@@ -6,11 +6,13 @@ import './styles.css'
 import MapContainer from '../Interoperabilidad/map.js'
 
 
-import { render } from "react-dom";
+import SockJS from 'sockjs-client'
+import Stomp from 'stompjs'
 
 import Chart from "./chart";
 
 class ProyectoInventarios extends React.Component {
+    
   constructor(props) {
     super(props);
     this.state =  {
@@ -53,6 +55,7 @@ class ProyectoInventarios extends React.Component {
           ]
         }
       }
+     ,stompClient:null
     };
     
     
@@ -63,15 +66,61 @@ class ProyectoInventarios extends React.Component {
 
   }
 
-  intervalUpdate = null;
+
   componentDidMount() {
+
     window.scrollTo(0,0);
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
+/*
+    this.ws = new WebSocket("wss://suomayaback.azurewebsites.net/suomayaback-websocket");
 
-    this.intervalUpdate = setInterval(function(){
-      this.showData();
-     }.bind(this), 1000);
+
+    this.ws.onmessage = e => {*/
+      var socket = new SockJS('https://suomayaback.azurewebsites.net/suomayaback-websocket');
+    this.state.stompClient = Stomp.over(socket);
+    this.state.stompClient.connect({}, frame=> {
+      //  setConnected(true);
+        console.log('Connected: ' + frame);
+        this.state.stompClient.subscribe('/topic/iot', e => {
+           
+       
+   //   const messageData = JSON.parse(e);
+   var  messageData = JSON.parse(e.body).content;
+
+          const message=JSON.parse( messageData.substring(0,messageData.search('}:')+1) );
+   console.log(message);
+
+      const oldBtcDataSet = this.state.lineChartData.data.datasets[0];
+      const newBtcDataSet = { ...oldBtcDataSet };
+      newBtcDataSet.data.push(message.rssiParticle);
+      
+ 
+      var oldlabel = this.state.lineChartData.labels;
+      var newLabel = { ...oldlabel };
+      var array= Object.values(newLabel);
+      console.log(      message.rssiParticle);
+      var y =new Date().toLocaleTimeString();
+      array.push(y);
+      if (newBtcDataSet.data.length>10)
+      {
+       newBtcDataSet.data.shift(); 
+       array.shift(); 
+      }
+ 
+      const newChartData = {
+        ...this.state.lineChartData,
+        datasets: [newBtcDataSet],
+        labels: array};
+ 
+ 
+      this.setState({ lineChartData: newChartData });
+    });
+  });
+
+   
+
+   
   }
 
   
@@ -120,6 +169,8 @@ class ProyectoInventarios extends React.Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
     clearInterval(this.intervalUpdate);
+    if (this.state.stompClient!=null)
+    this.state.stompClient.disconnect();
   }
   
   updateWindowDimensions() {
@@ -155,28 +206,7 @@ class ProyectoInventarios extends React.Component {
 
 
      this.setState({ lineChartData: newChartData });
-   /*
-    
 
-    let chartTime = new Date();
-    chartTime = chartTime.getHours() + ':' + ((chartTime.getMinutes() < 10) ? '0' + chartTime.getMinutes() : chartTime.getMinutes()) + ':' + ((chartTime.getSeconds() < 10) ? '0' + chartTime.getSeconds() : chartTime.getSeconds());
-    this.chart.data.labels.push(chartTime);
-    this.chart.data.datasets[0].data.push(x);
-    
-
-    x=Math.floor(Math.random() * 50) + 51  ;
-    this.chart.data.datasets[1].data.push(x);
-      console.log('aqui '+this.chart.data.datasets[1].data.length);
-    if (this.chart.data.datasets[1].data.length>10){
-      console.log('el shift ');
-      this.chart.data.datasets[1].data.shift(); 
-      this.chart.data.datasets[0].data.shift(); 
-      this.chart.data.labels.shift(); 
-    }
-
-    this.chart.update();   
-
-*/
   }
 }
 
