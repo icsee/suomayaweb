@@ -6,6 +6,13 @@ import Semilleros from './components/Semilleros'
 import Revista from './components/Revista'
 import Proyectos from './components/Proyectos'
 import ProyectoLogistica from './components/Proyecto/Logistica'
+import ProyectoLogisticaClientes from './components/Proyecto/Logistica/Clientes/List'
+import ProyectoLogisticaClientesAdd from './components/Proyecto/Logistica/Clientes/Add'
+import ProyectoLogisticaProveedores from './components/Proyecto/Logistica/Proveedor/List'
+import ProyectoLogisticaProveedorAdd from './components/Proyecto/Logistica/Proveedor/Add'
+import ProyectoLogisticaAlmacenes from './components/Proyecto/Logistica/Almacen/List'
+import ProyectoLogisticaAlmacenAdd from './components/Proyecto/Logistica/Almacen/Add'
+
 import ProyectoInventarios from './components/Proyecto/Inventarios'
 import ProyectoInteroperabilidad from './components/Proyecto/Interoperabilidad'
 import ProyectoPaneles from './components/Proyecto/Paneles'
@@ -39,7 +46,15 @@ class App extends Component {
                     <Route path="/revista" render={() => <Revista />}/>
                     <Route path="/proyectos" render={() => <Proyectos />}/>
                     <Route path="/proyecto/logistica" render={() => <ProyectoLogistica />}/>
+                    <Route path="/logistica/clientes" render={() => <ProyectoLogisticaClientes />}/>
+                    <Route path="/logistica/cliente-crear" render={() => <ProyectoLogisticaClientesAdd />}/>
+                    <Route path="/logistica/proveedores" render={() => <ProyectoLogisticaProveedores />}/>
+                    <Route path="/logistica/proveedor-crear" render={() => <ProyectoLogisticaProveedorAdd />}/>
+                    <Route path="/logistica/almacenes" render={() => <ProyectoLogisticaAlmacenes />}/>
+                    <Route path="/logistica/almacen-crear" render={() => <ProyectoLogisticaAlmacenAdd />}/>
+                    
                     <Route path="/proyecto/inventarios" render={() => <ProyectoInventarios />}/>
+                    
                     <Route path="/proyecto/interoperabilidad" render={() => <ProyectoInteroperabilidad />}/>
                     <Route path="/proyecto/paneles" render={() => <ProyectoPaneles />}/>
                     <Route path="/simposio" render={() => <Simposio />}/>

@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 import ReactPlayer from 'react-player'
 import video from '../../../assets/video/videoLogistica.mp4'
-
+import MenuLogistica from './Menu'
 
 class ProyectoLogistica extends React.Component {
   componentDidMount() {
@@ -15,6 +15,8 @@ class ProyectoLogistica extends React.Component {
     var name2=x>1000 ? 'info space': 'info'; 
     return(
       <div className={name2}>
+          <MenuLogistica/>
+
           <h1>Aplicación de un modelo lógistico 4.0 para la gestión de inventarios de productos en cadena de frío</h1>
           <section  className="column">          
             <div className={tipo}>   
@@ -43,6 +45,7 @@ class ProyectoLogistica extends React.Component {
                     </div>
               </div>
           </section>
+                  
 </div>
  
     );

@@ -1,0 +1,13 @@
+
+.info h1{
+    color: var(--verde);
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+  .form-cliente {
+
+      width: 600px;
+      
+  }
