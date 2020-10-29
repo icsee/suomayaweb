@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://suomayaback.azurewebsites.net/api/",
+  baseURL: "http://207.180.243.60:8080/suomayaApiRest/api/",
   headers: {
     "Content-type": "application/json"
   }
