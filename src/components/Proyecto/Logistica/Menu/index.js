@@ -15,6 +15,7 @@ const MenuLogistica = () => {
       <Button variant="small" route='logistica/cliente-crear'>
       Nuevo Cliente
       </Button>  
+      
       <Button variant="small" route='logistica/proveedores'>
       Proveedor
       </Button>  
@@ -28,6 +29,13 @@ const MenuLogistica = () => {
       
       <Button variant="small" route='logistica/almacen-crear'>
       Nuevo Almacen
+      </Button>  
+      <Button variant="small" route='logistica/productos'>
+      Productos
+      </Button>  
+      
+      <Button variant="small" route='logistica/producto-crear'>
+      Nuevo Producto
       </Button>  
       </div>   
   )

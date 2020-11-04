@@ -15,6 +15,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import TablePagination from '@material-ui/core/TablePagination';
 import MenuLogistica from '../../Menu';
+import { NavLink } from  'react-router-dom'
 
 const useStyles = makeStyles({
   table: {
@@ -44,6 +45,11 @@ function createData(name, calories, fat, carbs, protein) {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
+
+  const eliminar =(id)=>{
+   
+   clientes.delete(id);
+}
 
   return (
     <Paper>
@@ -76,6 +82,12 @@ function createData(name, calories, fat, carbs, protein) {
               <TableCell align="right">{row.telefono}</TableCell>
               <TableCell align="right">{row.contacto}</TableCell>
               <TableCell align="right">{row.correo}</TableCell>
+              <TableCell align="right">
+                <NavLink to={`cliente-editar/${row.id}`}>
+                  <input type='button' value='Modificar'  className="btn btn-secondary"/>                  
+                </NavLink> 
+              </TableCell>
+              <TableCell align="right"><input type='button' value='Eliminar' onClick={()=>eliminar(row.id)} className="btn btn-danger"/> </TableCell>
               
             </TableRow>
           ))}
@@ -120,11 +132,12 @@ class ProyectoLogisticaClientes extends React.Component {
         <MenuLogistica/>
           <h1>Lista de clientes</h1>
           
-          <BasicTable rows={this.state.clientes} />
+          <BasicTable rows={this.state.clientes} delete={this.deleteCliente}/>
       </div>
  
     );
   }
+
 
   retrieveClientes() {
     
@@ -140,6 +153,7 @@ class ProyectoLogisticaClientes extends React.Component {
   }
 
   deleteCliente(id){
+    
     ClinteService.delete(id)
     .then(response => {
       console.log(response.data);

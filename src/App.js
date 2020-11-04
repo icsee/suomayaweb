@@ -8,10 +8,19 @@ import Proyectos from './components/Proyectos'
 import ProyectoLogistica from './components/Proyecto/Logistica'
 import ProyectoLogisticaClientes from './components/Proyecto/Logistica/Clientes/List'
 import ProyectoLogisticaClientesAdd from './components/Proyecto/Logistica/Clientes/Add'
+import ProyectoLogisticaClientesEdit from './components/Proyecto/Logistica/Clientes/Edit'
+
 import ProyectoLogisticaProveedores from './components/Proyecto/Logistica/Proveedor/List'
 import ProyectoLogisticaProveedorAdd from './components/Proyecto/Logistica/Proveedor/Add'
+import ProyectoLogisticaProveedorEdit from './components/Proyecto/Logistica/Proveedor/Edit'
+
 import ProyectoLogisticaAlmacenes from './components/Proyecto/Logistica/Almacen/List'
 import ProyectoLogisticaAlmacenAdd from './components/Proyecto/Logistica/Almacen/Add'
+import ProyectoLogisticaAlmacenEdit from './components/Proyecto/Logistica/Almacen/Edit'
+
+import ProyectoLogisticaProductos from './components/Proyecto/Logistica/Producto/List'
+import ProyectoLogisticaProductoAdd from './components/Proyecto/Logistica/Producto/Add'
+import ProyectoLogisticaProductoEdit from './components/Proyecto/Logistica/Producto/Edit'
 
 import ProyectoInventarios from './components/Proyecto/Inventarios'
 import ProyectoInteroperabilidad from './components/Proyecto/Interoperabilidad'
@@ -48,13 +57,17 @@ class App extends Component {
                     <Route path="/proyecto/logistica" render={() => <ProyectoLogistica />}/>
                     <Route path="/logistica/clientes" render={() => <ProyectoLogisticaClientes />}/>
                     <Route path="/logistica/cliente-crear" render={() => <ProyectoLogisticaClientesAdd />}/>
+                    <Route path="/logistica/cliente-editar/:id" component={ProyectoLogisticaClientesEdit }/>
                     <Route path="/logistica/proveedores" render={() => <ProyectoLogisticaProveedores />}/>
                     <Route path="/logistica/proveedor-crear" render={() => <ProyectoLogisticaProveedorAdd />}/>
+                    <Route path="/logistica/proveedor-editar/:id" component={ProyectoLogisticaProveedorEdit }/>
                     <Route path="/logistica/almacenes" render={() => <ProyectoLogisticaAlmacenes />}/>
                     <Route path="/logistica/almacen-crear" render={() => <ProyectoLogisticaAlmacenAdd />}/>
-                    
-                    <Route path="/proyecto/inventarios" render={() => <ProyectoInventarios />}/>
-                    
+                    <Route path="/logistica/almacen-editar/:id" component={ProyectoLogisticaAlmacenEdit }/>
+                    <Route path="/logistica/productos" render={() => <ProyectoLogisticaProductos />}/>
+                    <Route path="/logistica/producto-crear" render={() => <ProyectoLogisticaProductoAdd />}/>
+                    <Route path="/logistica/producto-editar/:id" component={ProyectoLogisticaProductoEdit }/>
+                    <Route path="/proyecto/inventarios" render={() => <ProyectoInventarios />}/>                    
                     <Route path="/proyecto/interoperabilidad" render={() => <ProyectoInteroperabilidad />}/>
                     <Route path="/proyecto/paneles" render={() => <ProyectoPaneles />}/>
                     <Route path="/simposio" render={() => <Simposio />}/>

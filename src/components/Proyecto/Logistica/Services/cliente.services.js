@@ -5,6 +5,10 @@ class ClienteService {
     return http.get("/logistica/listarClientes");
   }
 
+  get(id) {
+    return http.get("/logistica/cliente?id="+id);
+  }
+
   create(data) {
     return http.post("/logistica/cliente", data);
   }
@@ -13,7 +17,7 @@ class ClienteService {
   }
 
   delete(id) {
-    return http.delete("/logistica/cliente"+id);
+    return http.delete("/logistica/cliente?id="+id);
   }
 }
 

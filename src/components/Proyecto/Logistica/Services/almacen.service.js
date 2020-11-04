@@ -4,7 +4,12 @@ class AlmacenService {
     getAll() {
         return http.get("/logistica/listarAlmacenes");
       }
-    
+
+      get(id) {
+        return http.get("/logistica/almacen?id="+id);
+      }
+
+      
       create(data) {
         return http.post("/logistica/almacen", data);
       }
@@ -13,7 +18,7 @@ class AlmacenService {
       }
     
       delete(id) {
-        return http.delete("/logistica/almacen"+id);
+        return http.delete("/logistica/almacen?id="+id);
       }
 }
 

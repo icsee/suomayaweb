@@ -15,6 +15,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import TablePagination from '@material-ui/core/TablePagination';
 import MenuLogistica from '../../Menu';
+import { NavLink } from  'react-router-dom'
 
 const useStyles = makeStyles({
   table: {
@@ -45,7 +46,9 @@ function createData(name, calories, fat, carbs, protein) {
     setPage(0);
   };
 
-
+  const eliminar =(id)=>{   
+    almancenes.delete(id);
+  }
   return (
     <Paper>
     <TableContainer component={Paper}>
@@ -68,6 +71,12 @@ function createData(name, calories, fat, carbs, protein) {
               <TableCell align="right">{row.temperatura}</TableCell>
               <TableCell align="right">{row.humedad}</TableCell>
               <TableCell align="right">{row.capacidad}</TableCell>
+              <TableCell align="right">
+                <NavLink to={`almacen-editar/${row.id}`}>
+                  <input type='button' value='Modificar'  className="btn btn-secondary"/>                  
+                </NavLink> 
+              </TableCell>
+              <TableCell align="right"><input type='button' value='Eliminar' onClick={()=>eliminar(row.id)} className="btn btn-danger"/> </TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -92,6 +101,8 @@ class ProyectoLogisticaAlmacenes extends React.Component {
   constructor(props) {
     super(props);
     
+    this.deleteAlmacen = this.deleteAlmacen.bind(this);
+    this.retrieveAlmacenes = this.retrieveAlmacenes.bind(this);    
     this.state = {
       almancenes: [],
       width: 0, height: 0
@@ -109,10 +120,24 @@ class ProyectoLogisticaAlmacenes extends React.Component {
         <MenuLogistica/>
           <h1>Lista de almacenes</h1>
           
-          <BasicTable rows={this.state.almancenes} />
+          <BasicTable rows={this.state.almancenes} delete={this.deleteAlmacen} />
       </div>
  
     );
+  }
+
+    
+  deleteAlmacen(id){
+    
+    AlmacenService.delete(id)
+    .then(response => {
+      console.log(response.data);
+      this.retrieveAlmacenes();
+    })
+    .catch(e => {
+      console.log(e);
+    });
+
   }
 
   retrieveAlmacenes() {
