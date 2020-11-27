@@ -134,7 +134,7 @@ class ProyectoInteroperabilidad extends React.Component {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
 
-    var socket = new SockJS('https://suomayaback.azurewebsites.net/suomayaback-websocket');//url back
+    var socket = new SockJS('https://suomaya.co:8081/suomayaApiRest/suomayaback-websocket');//url back
     this.state.stompClient = Stomp.over(socket);
     this.state.stompClient.connect({}, frame=> {
       //  setConnected(true);
