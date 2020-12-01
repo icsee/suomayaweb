@@ -89,7 +89,7 @@ export const jueves = {
         {
             nombre: 'Ciencia de datos en ciberseguridad empresarial',
             autor: 'Edgar Oswaldo Díaz',
-            pais: '🇨🇴',
+            pais: '🇲🇽',
             hora: '10:00 - 11:00', 
             lugar: 'Teleconferencia',
             avatar: oswaldoDiaz,

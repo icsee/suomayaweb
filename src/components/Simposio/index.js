@@ -41,7 +41,7 @@ class Simposio extends React.Component {
               <br />
               <br />Diciembre 4: 
               <br />Fabio Cortés  🇨🇭 9am - 10am 
-              <br />Edgar Oswaldo Díaz 🇨🇴 10am - 11am
+              <br />Edgar Oswaldo Díaz 🇲🇽 10am - 11am
               <br />Nelson Giovanni Agudelo 🇨🇴 2pm - 4pm
               <br />
             </p>
