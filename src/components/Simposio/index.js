@@ -3,7 +3,7 @@ import Button from '../Button'
 import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
-import flyer2 from '../../assets/img/simposio2.jpg'
+import flyer2 from '../../assets/img/simposio4.jpeg'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -23,28 +23,27 @@ class Simposio extends React.Component {
       <div className="simposio">
         <section className="simposio-top row">
           <div className="simposio-top-info column">
-            <h1>III Simposio Ciencia, innovación y tecnología</h1>
+            <h1>V Simposio Ciencia, innovación y tecnología</h1>
             <p>
               Este evento surge ante la necesidad de difundir  y posicionar  
               los  procesos de  investigación, desarrollo tecnológico e innovación
               realizados en CGMLTI como también los avances y resultados de los
               proyectos  SENNOVA y cuenta con la participación de diferentes invitados
               como empresarios, universidades, IES, líderes SENNOVA e investigadores. 
-              <br />
-              <br />Recepción de artículos: Hasta el 19 de Agosto de 2019.
-              <br />Evaluación de artículos: 20 al 30 de Agosto de 2019.
-              <br />Comunicación de resultados: 3 de septiembre de 2019.
+              
+              
               <br /> <br /> <strong>Agenda del evento: </strong>
-              <br />Octubre 2: 
-              <br />Mercadeo 9am - 12m
-              <br />Logística 1pm - 6pm
+              <br />Diciembre 3: 
+              <br />Dora Valdez 🇵🇪 9am - 10am
+              <br />Carolina Santana 🇨🇴 10am - 12pm
+              <br />Ehidée Isabel Gómez 🇧🇷 3pm - 4pm
+              <br />Renzo Grover Fabian Espinoza 🇵🇪 4pm - 5pm
               <br />
-              <br />Octubre 3: 
-              <br />Teleinformática 8am - 12m (Audiovisuales)
-              <br />Industrias creativas 1pm - 6pm
+              <br />Diciembre 4: 
+              <br />Fabio Cortés  🇨🇭 9am - 10am 
+              <br />Edgar Oswaldo Díaz 🇨🇴 10am - 11am
+              <br />Nelson Giovanni Agudelo 🇨🇴 2pm - 4pm
               <br />
-              <br />Octubre 4:
-              <br />Teleinformática 8am - 12m
             </p>
             <div className="simposio-top-support column">
               <h2>Con el apoyo de:</h2>
@@ -53,8 +52,9 @@ class Simposio extends React.Component {
                 <img src={sennova} alt="sennova" width="210" />
                 {/* <img src={logoSimposio} alt="simposio" width="210" /> */}
               </div>
-              {/* <p>Inscripciones cerradas</p> */}
-              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform">
+              {/* <p>Inscripciones cerradas</p> 
+              https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform*/}
+              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSeBdFDndjNiLPhYKQ1bIla4llfJkJPIyMN-7d1oDpyckxSszA/viewform">
                   INSCRÍBETE AQUÍ
               </Button>
             </div>

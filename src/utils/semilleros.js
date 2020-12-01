@@ -5,12 +5,12 @@ import avatarMonica from '../assets/img/AvatarMonicaDiaz.PNG'
 import avatarfb from '../assets/img/facebook.jpg'
 import avatarweb from '../assets/img/paginaweb.png'
 import aleph from '../assets/img/aleph.png'
-import innovatics from '../assets/img/innovatics.png'
+import innovatics from '../assets/img/Innovatics2.png'
 import siam from '../assets/img/siam.png'
 import neurocomarketing from '../assets/img/neurocomarketing.png'
 import industriasc from '../assets/img/ic.png'
 
-
+import Nelson from '../assets/img/nelson.png'
 const getSemillero = (semillero) => {
   if(semillero === 'innovatics') {
     return {
@@ -23,7 +23,7 @@ const getSemillero = (semillero) => {
           name: 'Nelson Giovanni Agudelo C.',
           mail: 'nagudeloc@sena.edu.co',
           detail: 'Especialista en Telecomunicaciones y Teleinformática',
-          avatar: avatar,
+          avatar: Nelson  ,
         },
         {
           name: 'David Cáceres',
