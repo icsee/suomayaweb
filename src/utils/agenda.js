@@ -21,7 +21,7 @@ import GiovannySerrano from '../assets/img/GiovannySerrano.png'
 import Miguel from '../assets/img/Miguel.png'
 import servientrega from '../assets/img/servientrega.png'
 import oswaldoDiaz from '../assets/img/oswaldoDiaz.jpg'
-
+import juanamezquita from '../assets/img/juanamezquita.jpg'
 import Vilma from '../assets/img/Vilma.png'
 import Camilo from '../assets/img/Camilo.png'
 import Gustavo from '../assets/img/Gustavo.png'
@@ -47,12 +47,19 @@ export const miercoles = {
             hora: '9:00 - 10:00',
             lugar: 'Teleconferencia',
             avatar:  DoraValdez,
+        },{
+            nombre: 'Simulación en tiempo real de sistemas de potencia y su aplicación en pruebas a relés de protección',
+            autor: 'Renzo Grover Fabian Espinoza',
+            pais: '🇵🇪',
+            hora: '10:30 - 11:30',
+            lugar: 'Teleconferencia',
+            avatar: Renzo, 
         },
         {
             nombre: 'La necesidad de la escritura académica en procesos científicos',
             autor: 'Carolina Santana',
             pais: '🇨🇴',
-            hora: '10:00 - 12:00',
+            hora: '1:00 - 2:30',
             lugar: 'Teleconferencia',
             avatar: carolinaSantana,
         },
@@ -63,15 +70,8 @@ export const miercoles = {
             hora: '3:00 - 4:00',
             lugar: 'Teleconferencia',
             avatar: Ehieda, 
-        },
-        {
-            nombre: 'Simulación en tiempo real de sistemas de potencia y su aplicación en pruebas a relés de protección',
-            autor: 'Renzo Grover Fabian Espinoza',
-            pais: '🇵🇪',
-            hora: '4:00 - 5:00',
-            lugar: 'Teleconferencia',
-            avatar: Renzo, 
         }
+        
     ]
 }
 
@@ -93,12 +93,20 @@ export const jueves = {
             hora: '10:00 - 11:00', 
             lugar: 'Teleconferencia',
             avatar: oswaldoDiaz,
+        },,
+        {
+            nombre: 'Machine learning to data cleaning',
+            autor: 'Juan carlos Amézquita Tovar',
+            pais: '🇨🇴',
+            hora: '2:00 pm - 2:30',
+            lugar: 'Teleconferencia',
+            avatar: juanamezquita, 
         },
         {
-            nombre: 'Muestra de proyectos SENA CGMLTI',
+            nombre: 'MODERADOR',
             autor: 'Nelson Giovanni Agudelo',
             pais: '🇨🇴',
-            hora: '2:00 - 4:00',
+            hora: '',
             lugar: 'Teleconferencia',
             avatar: Nelson, 
         }

@@ -35,14 +35,15 @@ class Simposio extends React.Component {
               <br /> <br /> <strong>Agenda del evento: </strong>
               <br />Diciembre 3: 
               <br />Dora Valdez 🇵🇪 9am - 10am
-              <br />Carolina Santana 🇨🇴 10am - 12pm
+              <br />Renzo Grover Fabian Espinoza 🇵🇪 10:30 am - 11:30 am
+              <br />Carolina Santana 🇨🇴 1:00 pm - 2:30 pm
               <br />Ehidée Isabel Gómez 🇧🇷 3pm - 4pm
-              <br />Renzo Grover Fabian Espinoza 🇵🇪 4pm - 5pm
               <br />
               <br />Diciembre 4: 
               <br />Fabio Cortés  🇨🇭 9am - 10am 
               <br />Edgar Oswaldo Díaz 🇲🇽 10am - 11am
-              <br />Nelson Giovanni Agudelo 🇨🇴 2pm - 4pm
+              <br />Juan Carlos Amézquita 🇨🇴 2:00 pm - 2:30 pm
+              <br />Nelson Giovanni Agudelo 🇨🇴 
               <br />
             </p>
             <div className="simposio-top-support column">
