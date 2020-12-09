@@ -37,6 +37,11 @@ const MenuLogistica = () => {
       <Button variant="small" route='logistica/producto-crear'>
       Nuevo Producto
       </Button>  
+
+      <Button variant="small" route='logistica/reporte'>
+      Reportes
+      </Button>  
+      
       </div>   
   )
 }

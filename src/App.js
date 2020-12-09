@@ -32,6 +32,7 @@ import Semillero from './components/Semillero'
 import Fotofilm from './components/Fotofilm'
 import Concurso from './components/Concurso'
 import './App.css'
+import ProyectoLogisticaReporte from './components/Proyecto/Logistica/Reporte'
 
 const semilleros = ['innovatics', 'siclog', 'neurocomarketing', 'siam', 'aleph', 'industriascreativas']
 
@@ -67,6 +68,7 @@ class App extends Component {
                     <Route path="/logistica/productos" render={() => <ProyectoLogisticaProductos />}/>
                     <Route path="/logistica/producto-crear" render={() => <ProyectoLogisticaProductoAdd />}/>
                     <Route path="/logistica/producto-editar/:id" component={ProyectoLogisticaProductoEdit }/>
+                    <Route path="/logistica/reporte" render={() => <ProyectoLogisticaReporte />}/>
                     <Route path="/proyecto/inventarios" render={() => <ProyectoInventarios />}/>                    
                     <Route path="/proyecto/interoperabilidad" render={() => <ProyectoInteroperabilidad />}/>
                     <Route path="/proyecto/paneles" render={() => <ProyectoPaneles />}/>
