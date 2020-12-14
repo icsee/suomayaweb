@@ -55,7 +55,7 @@ function createData(name, calories, fat, carbs, protein) {
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            
+          <TableCell align="right">Código</TableCell>
             <TableCell align="right">Nombre</TableCell>
             <TableCell align="right">Descripción</TableCell>
             <TableCell align="right">Registro invima</TableCell>
@@ -74,6 +74,7 @@ function createData(name, calories, fat, carbs, protein) {
         <TableBody>
           {productos.rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => (
             <TableRow key={row.idprod}>
+              <TableCell align="right">{row.codigo}</TableCell>
               <TableCell align="right">{row.nombre}</TableCell>
               <TableCell align="right">{row.descripcion}</TableCell>
               <TableCell align="right">{row.registro_invima}</TableCell>

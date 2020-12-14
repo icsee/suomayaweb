@@ -77,7 +77,7 @@ class ProyectoInventarios extends React.Component {
 
 
     this.ws.onmessage = e => {*/
-      var socket = new SockJS('https://suomayaback.azurewebsites.net/suomayaback-websocket');
+      var socket = new SockJS('https://suomaya.co:8081/suomayaApiRest/suomayaback-websocket');
     this.state.stompClient = Stomp.over(socket);
     this.state.stompClient.connect({}, frame=> {
       //  setConnected(true);
@@ -143,19 +143,46 @@ class ProyectoInventarios extends React.Component {
 </p>
             <iframe src="https://sebasapk.github.io/Paneles-Solares/" height="700" width="1000" frameborder="0"></iframe>
             </div>
-
+        <div className='row chart-area-p'>
             <div className="chart-area-p" >
-            <h2>Ambiente</h2>
+            <h2>Temperatura</h2>
                   <Chart
                   data={this.state.lineChartData}
                   options={this.state.lineChartOptions}
                 />
+            </div>
+            <div className="chart-area-p" >
+            <h2>Presión</h2>
+                  <Chart
+                  data={this.state.lineChartData}
+                  options={this.state.lineChartOptions}
+                />
+            </div>
+            </div>
+            
+
+            <div className='row chart-area-p'>
+            <div className="chart-area-p" >
+            <h2>Humedad</h2>
+                  <Chart
+                  data={this.state.lineChartData}
+                  options={this.state.lineChartOptions}
+                />
+            </div>
+            <div className="chart-area-p" >
+            <h2>Decibeles </h2>
+                  <Chart
+                  data={this.state.lineChartData}
+                  options={this.state.lineChartOptions}
+                />
+            </div>
             </div>
             <div className="map-area">
            
                 <MapContainer/>
 
             </div>
+
           </section>
           </center>
 </div>

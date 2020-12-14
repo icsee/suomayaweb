@@ -15,6 +15,7 @@ class ProyectoLogisticaProductoEdit extends React.Component {
       this.retrieveProveedores = this.retrieveProveedores.bind(this);  
       this.onChangeDescripcion = this.onChangeDescripcion.bind(this);  
       this.onChangeNombre = this.onChangeNombre.bind(this);  
+      this.onChangeCodigo = this.onChangeCodigo.bind(this);  
       this.onChangeRegistroInvima = this.onChangeRegistroInvima.bind(this);  
       this.onChangeUnidadMedida = this.onChangeUnidadMedida.bind(this);
       this.onChangePeso = this.onChangePeso.bind(this);  
@@ -39,6 +40,7 @@ class ProyectoLogisticaProductoEdit extends React.Component {
       this.state = {
         
             id:idproducto,
+            codigo: "",
             nombre: "",
             descripcion: "", 
             registro_invima: "",
@@ -103,7 +105,12 @@ class ProyectoLogisticaProductoEdit extends React.Component {
       this.setState({ idcliente: e.target.value });
     }
 
-    
+    onChangeCodigo(e) {
+      this.setState({
+        codigo: e.target.value
+      });        
+    }
+  
    onChangeNombre(e) {
     this.setState({
       nombre: e.target.value
@@ -190,7 +197,19 @@ class ProyectoLogisticaProductoEdit extends React.Component {
 
           <h1>Modificar producto</h1>     
 
-
+          <div className="form-group">
+              <label htmlFor="codigo">Código</label>
+              <input
+                type="text"
+                className="form-control"
+                id="codigo"
+                required
+                value={this.state.codigo}
+                onChange={this.onChangeCodigo}
+                name="codigo"
+                placeholder="Código"
+              />
+            </div>
           <div className="form-group">
               <label htmlFor="nombre">Nombre</label>
               <input
@@ -410,7 +429,7 @@ class ProyectoLogisticaProductoEdit extends React.Component {
         ProductoService.get(this.state.id)
         .then(response => {
             this.setState({
-              
+              codigo: response.data.codigo,  
               nombre: response.data.nombre,
             descripcion: response.data.descripcion,
             registro_invima: response.data.registro_invima,
@@ -442,6 +461,7 @@ class ProyectoLogisticaProductoEdit extends React.Component {
           
         var data = {
             idprod: this.state.id,
+            codigo: this.state.codigo,
             nombre: this.state.nombre,
             descripcion: this.state.descripcion,
             registro_invima: this.state.registro_invima,
