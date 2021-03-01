@@ -8,14 +8,20 @@ import Stomp from 'stompjs';
 
 
 class ProyectoInteroperabilidad extends React.Component {
-
+ 
 
   constructor(props) {
     super(props);
     this.state = { width: 0, height: 0 };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-
+    this.showBluetooh = this.showBluetooh.bind(this);
+    this.showLora = this.showLora.bind(this);
+    this.showWifi = this.showWifi.bind(this);
     this.state =  {
+
+      showBluetooth: false,
+      showLora: false,
+      showWifi: false,
       valueRssiLora:'0DBi',
       valueRssiBluetooh:'0DBi',
       valueRssiWifi:'0DBi',
@@ -116,9 +122,41 @@ class ProyectoInteroperabilidad extends React.Component {
           callbacks: {
             label: function(tooltipItem, chart) {
               var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-              return datasetLabel + number_format(tooltipItem.yLabel);
+              return datasetLabel + ' '+ number_format(tooltipItem.yLabel);
             }
           }
+        },
+        lineChartDataLora: {
+          labels: [0],
+          datasets: [{
+            data: [0],
+            label: 'Lux',
+            // backgroundColor: '#ff6600'
+            borderColor: '#41D519',
+            pointBackgroundColor: '#229954'
+          }
+        ]
+        },
+        lineChartDataLuminosidad: {
+          labels: [0],
+          datasets: [{
+            data: [0],
+            label: 'Lux',
+            // backgroundColor: '#ff6600'
+            borderColor: '#41D519',
+            pointBackgroundColor: '#229954'
+          }
+        ]
+        }, lineChartDataParticle: {
+          labels: [0],
+          datasets: [{
+            data: [0],
+            label: 'Lux',
+            // backgroundColor: '#ff6600'
+            borderColor: '#41D519',
+            pointBackgroundColor: '#229954'
+          }
+        ]
         }
       }
   
@@ -177,9 +215,24 @@ class ProyectoInteroperabilidad extends React.Component {
         ...this.state.lineChartData,
         datasets: [newBtcDataSet.datasets[0],newBtcDataSet.datasets[1],newBtcDataSet.datasets[2],newBtcDataSet.datasets[3]],
         labels: array};
+
+        const newChartDataLora = {
+          ...this.state.lineChartDataLora,
+          datasets: [newBtcDataSet.datasets[1]],
+          labels: array};
+
+          const newChartDataLuminosidad = {
+            ...this.state.lineChartDataLuminosidad,
+            datasets: [newBtcDataSet.datasets[2]],
+            labels: array};
  
+            const newChartDataParticle = {...this.state.lineChartDataLuminosidad,
+              datasets: [newBtcDataSet.datasets[0]],
+              labels: array};
  
-      this.setState({ lineChartData: newChartData,
+      this.setState({ lineChartData: newChartData,lineChartDataLora:newChartDataLora,
+        lineChartDataLuminosidad:newChartDataLuminosidad,
+        lineChartDataParticle:newChartDataParticle,
         valueRssiLora: message.rssiLora.toFixed(2)+' DBi',
         valueRssiBluetooh: message.rssiBluetooth.toFixed(2)+' DBi',
         valueRssiWifi: message.rssiParticle.toFixed(2)+' DBi',
@@ -190,6 +243,18 @@ class ProyectoInteroperabilidad extends React.Component {
 
    }
 
+  showBluetooh() {  
+  
+     this.setState({ showBluetooth: true,showLora:false,showWifi:false});
+  }
+  showLora() {  
+  
+    this.setState({ showBluetooth: false,showLora:true,showWifi:false});
+ }
+ showWifi() {  
+  
+  this.setState({ showBluetooth: false,showLora:false,showWifi:true});
+}
 
   render() {
     var x =this.state.width;
@@ -218,12 +283,14 @@ class ProyectoInteroperabilidad extends React.Component {
                   </div>
 
             
-            <div className="col-xl-6 col-md-6 mb-4">
+            <div className="col-xl-6 col-md-6 mb-4" >
               <div className="card border-left-success shadow h-100 py-2">
                 <div className="card-body">
                   <div className="row no-gutters align-items-center">
                     <div className="col mr-2">
-                      <div className="text-xs font-weight-bold text-success text-uppercase mb-1">RSSI Lora</div>
+                      <div className="text-xs font-weight-bold text-success text-uppercase mb-1">RSSI Lora
+                         
+                      </div>
                       <div className="h5 mb-0 font-weight-bold text-gray-800" id="rssiLora">{this.state.valueRssiLora}</div>
                     </div>
                     <div className="col-auto">
@@ -297,9 +364,82 @@ class ProyectoInteroperabilidad extends React.Component {
   </div>
 </div>
 
+<div className="row">
 
+<button className="itemMenu" onClick={this.showBluetooh}>bluetooth </button>  
+<button className="itemMenu" onClick={this.showLora}>Lora </button>  
+<button className="itemMenu" onClick={this.showWifi}>Wifi </button>  
 
+                      </div>
 
+{ this.state.showBluetooth ? 
+
+<div className="col-xl-12 col-lg-15">
+  <div className="card shadow mb-4">
+    
+    <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+      <h6 className="m-0 font-weight-bold text-primary">BLE 4.0 - SENSOR DE LUZ&nbsp;</h6>
+      
+    </div>
+    
+    <div className="card-body" >
+    <div className="chart-area" >
+    <Chart
+                  data={this.state.lineChartDataLora}
+                  options={this.state.lineChartOptions}
+                />
+      </div>
+    </div>
+  </div>
+</div>
+: null
+ } 
+
+{ this.state.showLora ? 
+
+<div className="col-xl-12 col-lg-15">
+  <div className="card shadow mb-4">
+    
+    <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+      <h6 className="m-0 font-weight-bold text-primary">LoRa RA02 - SENSOR DE LUMINOSIDAD&nbsp;</h6>
+      
+    </div>
+    
+    <div className="card-body" >
+    <div className="chart-area" >
+    <Chart
+                  data={this.state.lineChartDataLuminosidad}
+                  options={this.state.lineChartOptions}
+                />
+      </div>
+    </div>
+  </div>
+</div>
+: null
+ }
+
+{ this.state.showWifi ? 
+
+<div className="col-xl-12 col-lg-15">
+  <div className="card shadow mb-4">
+    
+    <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+      <h6 className="m-0 font-weight-bold text-primary">WiFi PHOTON PARTICLE - SENSOR DE LUMINOSIDAD&nbsp;</h6>
+      
+    </div>
+    
+    <div className="card-body" >
+    <div className="chart-area" >
+    <Chart
+                  data={this.state.lineChartDataParticle}
+                  options={this.state.lineChartOptions}
+                />
+      </div>
+    </div>
+  </div>
+</div>
+: null
+ }
 
 <div className="row">
 
