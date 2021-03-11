@@ -141,7 +141,9 @@ class ProyectoInventarios extends React.Component {
 
           Sistema de generación de energía solar fotovoltaica de 3Kw de potencia instalado en el Centro de Gestión de Mercados Logística y TI monitoreado con un sistema de tipo IoT compuesto por paneles monocristalinos y policristalinos.
 </p>
-            <iframe src="https://sebasapk.github.io/Paneles-Solares/" height="700" width="1000" frameborder="0"></iframe>
+            {//<iframe src="https://sebasapk.github.io/Paneles-Solares/" height="700" width="1000" frameborder="0"></iframe>
+          }
+            <iframe src="https://giovanniagudelo.github.io/Paneles-Solares/" height="700" width="1000" frameborder="0"></iframe>
             </div>
         <div className='row chart-area-p'>
             <div className="chart-area-p" >
