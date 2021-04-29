@@ -31,7 +31,7 @@ const Navbar = ({variant, type}) => {
             to='/simposio'
             activeClassName="selected"
             >
-            Simposio
+            Seminario
           </NavLink>
           <NavLink
             to='/fotofilm'

@@ -47,8 +47,10 @@
 }
 
 .flyer{
-  width: 450px;
+  width: 600px;
+  height: 900px;
   margin-left: 50px;
+  
 }
 
 .simposio-pics{
@@ -321,7 +323,7 @@
 
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
   .simposio-top{
     flex-direction: column !important;
   }

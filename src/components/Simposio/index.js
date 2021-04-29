@@ -3,7 +3,7 @@ import Button from '../Button'
 import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
-import flyer2 from '../../assets/img/simposio4.jpeg'
+import flyer2 from '../../assets/img/seminario.jpg'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -23,7 +23,8 @@ class Simposio extends React.Component {
       <div className="simposio">
         <section className="simposio-top row">
           <div className="simposio-top-info column">
-            <h1>V Simposio Ciencia, innovación y tecnología</h1>
+            <h1>II SEMINARIO DE INVESTIGACIÓN E INNOVACION</h1>
+            <h2>GRUPO SUOMAYA</h2>
             <p>
               Este evento surge ante la necesidad de difundir  y posicionar  
               los  procesos de  investigación, desarrollo tecnológico e innovación
@@ -55,7 +56,7 @@ class Simposio extends React.Component {
               </div>
               {/* <p>Inscripciones cerradas</p> 
               https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform*/}
-              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSeBdFDndjNiLPhYKQ1bIla4llfJkJPIyMN-7d1oDpyckxSszA/viewform">
+              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSeDGZ2pKucJ0UqP8YDIewhcBzrzQm9kes7FjvimHU7TMIaBlw/viewform?vc=0&c=0&w=1&flr=0&gxids=7628">
                   INSCRÍBETE AQUÍ
               </Button>
             </div>
