@@ -19,13 +19,19 @@ const Agenda = () => {
       <div className="simposio-agenda-menu column">
         <h1>Agenda del evento</h1>
         <ul className="row">
+        
           <li className={isSelected(1)} onClick={() => setDay(1)}>
-            Jueves
+            Martes
           </li>
           <li className={isSelected(2)} onClick={() => setDay(2)}>
+            Miercoles
+          </li>
+          <li className={isSelected(3)} onClick={() => setDay(3)}>
+            Jueves
+          </li>
+          <li className={isSelected(4)} onClick={() => setDay(4)}>
             Viernes
           </li>
-          
         </ul>
       </div>
       <div className="simposio-agenda-content column">

@@ -1,192 +1,271 @@
 import avatar from '../assets/img/avatar.png'
-import FatimaMartinez from '../assets/img/FatimaMartinez.png'
-import ErnestoCarreño from '../assets/img/ErnestoCarreño.png'
-import CarmenCampo from '../assets/img/CarmenOcampo.png'
-import FabioCortes from '../assets/img/FabioCortes.png'
-import Renzo from '../assets/img/renzo.png'
-import SandraRubio from '../assets/img/SandraRubio.png'
-import JulianaColussi from '../assets/img/JulianaColussi.png'
-import MaribelGarcia from '../assets/img/MaribelGarcia.png'
-import HernanCruz from '../assets/img/HernanCruz.png'
-import DoraValdez from '../assets/img/DoraValdez.png'
-import Ehieda from '../assets/img/Ehieda.png'
+import JuanDaza from '../assets/img/JuanDaza.jpg'
+import JuanAparicio from '../assets/img/JuanAparicio.png'
+import HernanSaldana from '../assets/img/HernanSaldana.png'
+import VladimirDucon from '../assets/img/vladimirDucon.jpg'
 import Nelson from '../assets/img/nelson.png'
+import juanamezquita from '../assets/img/juanamezquita.jpeg'
+import AnaCruz from '../assets/img/AnaCruz.png'
+import LuisMoreno from '../assets/img/LuisMoreno.jpeg'
+import JorgePosada from '../assets/img/JorgePosada.jpeg'
+import DanielRestrepo from '../assets/img/DanielRestrepo.jpeg'
+import RafaelSocarras from '../assets/img/RafaelSocarras.jpeg'
+import NicolasAfanador from '../assets/img/NicolasAfanador.jpeg'
+import CristinaRamirez from '../assets/img/CristinaRamirez.jpeg'
 
-import carolinaSantana from '../assets/img/carolinaSantana.png'
-
-import AlejandraCalderon from '../assets/img/AlejandraCalderon.png'
-import Argentino from '../assets/img/Argentino.png'
-import Francisco from '../assets/img/Francisco.png'
-import GiovannySerrano from '../assets/img/GiovannySerrano.png'
-import Miguel from '../assets/img/Miguel.png'
-import servientrega from '../assets/img/servientrega.png'
-import oswaldoDiaz from '../assets/img/oswaldoDiaz.jpg'
-import juanamezquita from '../assets/img/juanamezquita.jpg'
-import Vilma from '../assets/img/Vilma.png'
-import Camilo from '../assets/img/Camilo.png'
-import Gustavo from '../assets/img/Gustavo.png'
-import AndreaCarolina from '../assets/img/AndreaCarolina.png'
-import Johanny from '../assets/img/Johanny.png'
-import DanielaRamirez from '../assets/img/DanielaRamirez.png'
-import DanielBuitrago from '../assets/img/DanielBuitrago.png'
-import JamesRincon from '../assets/img/JamesRincon.png'
-import Wilson from '../assets/img/Wilson.png'
-import Parra from '../assets/img/Parra.png'
-import sancho from '../assets/img/sancho.jpg'
-import Hollman from '../assets/img/Hollman.png'
-import Ivonne from '../assets/img/Ivonne.png'
-import Henry from '../assets/img/Henry.jpg'
-
-export const miercoles = {
-    fecha: 'Jueves 3',
-    ponencias: [
-        {   
-            nombre: 'La analítica de datos pieza clave en la transformación digital. Efecto Pandemia',
-            autor: 'Dora Valdez',
-            pais: '🇵🇪',
-            hora: '9:00 - 10:00',
-            lugar: 'Teleconferencia',
-            avatar:  DoraValdez,
-        },{
-            nombre: 'Simulación en tiempo real de sistemas de potencia y su aplicación en pruebas a relés de protección',
-            autor: 'Renzo Grover Fabian Espinoza',
-            pais: '🇵🇪',
-            hora: '10:30 - 11:30',
-            lugar: 'Teleconferencia',
-            avatar: Renzo, 
-        },
-        {
-            nombre: 'La necesidad de la escritura académica en procesos científicos',
-            autor: 'Carolina Santana',
-            pais: '🇨🇴',
-            hora: '1:00 - 2:30',
-            lugar: 'Teleconferencia',
-            avatar: carolinaSantana,
-        },
-        {
-            nombre: 'Vacuna contra SARS-CoV-2: Una mirada desde la Salud Colectiva en tiempos de Pandemia e fortalecimiento del Capitalismo',
-            autor: 'Ehidée Isabel Gómez',
-            pais: '🇧🇷',
-            hora: '3:00 - 4:00',
-            lugar: 'Teleconferencia',
-            avatar: Ehieda, 
-        }
-        
-    ]
-}
-
-export const jueves = {
-    fecha: 'Viernes 4',
+export const martes = {
+    fecha: 'Martes 11',
     ponencias: [
         {
-            nombre: 'La nueva generación de experiencias inmersivas en la web.',
-            autor: 'Fabio Cortés',
-            pais: '🇨🇭',
-            hora: '9:00 - 10:00', 
-            lugar: 'Teleconferencia',
-            avatar:  FabioCortes,
-        },
-        {
-            nombre: 'Ciencia de datos en ciberseguridad empresarial',
-            autor: 'Edgar Oswaldo Díaz',
-            pais: '🇲🇽',
-            hora: '10:00 - 11:00', 
-            lugar: 'Teleconferencia',
-            avatar: oswaldoDiaz,
-        },,
-        {
-            nombre: 'Machine learning to data cleaning',
+            nombre: 'Machine learning to cleaning data',
             autor: 'Juan carlos Amézquita Tovar',
+            perfil:'Ingeniero de Telecomunicaciones con especialización en Deep learning y comunicaciones móviles',
             pais: '🇨🇴',
-            hora: '2:00 pm - 2:30',
+            hora: '9:00 am - 10:00 am',
+            empresa:'Tecnoparque Nodo Bogotá',
             lugar: 'Teleconferencia',
             avatar: juanamezquita, 
         },
         {
+            nombre: 'IOT, BIG DATA, CLOUD E INTELIGENCIA ARTIFICIAL, como herramientas efectivas en la reducción del desperdicio de la energía y el agua',
+            autor: 'Vladimir Ducon',
+            perfil:'Ingeniero Electrónico con un MBA de la Universidad Javeriana',
+            pais: '🇨🇴',
+            hora: '10:00 am - 11:00 am',
+            empresa:'Dinamov',
+            lugar: 'Teleconferencia',
+            avatar: VladimirDucon,
+         },
+        {
+            nombre: 'Text Mining en el Idioma Español',
+            autor: 'Luis Gabriel Moreno Sandoval',
+            perfil:'Lider de analítica e investigación',
+            pais: '🇨🇴',
+            hora: '11:00 am - 12:00 pm',
+            empresa:'Lumon',
+            lugar: 'Teleconferencia',
+            avatar: LuisMoreno,
+         },{   
+            nombre: 'Implementación de Interacciones Inmersivas en fotos 360',        
+            autor: 'Juan Manuel Aparicio Camargo',
+            perfil:'Director Ejecutivo',
+            empresa:'Gaira Consulting Group',
+            pais: '🇨🇴',
+            hora: '2:00 pm - 3:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  JuanAparicio,
+        },{   
+            nombre: 'Aplicación de Interacciones Inmersivas en fotos 360',        
+            autor: 'Hernan Eduardo Saldaña.',
+            perfil:' Director Creativo',
+            empresa:'Gaira Consulting Group',
+            pais: '🇨🇴',
+            hora: '3:00 pm - 4:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  HernanSaldana,
+        },
+        {   
+            nombre: 'Modelamiento matemático y machine learning para proyectos de construcción',   
+            autor: 'Daniel Restrepo Jimenez.',
+            perfil:'Profesional Unidad Analítica at PAYC SAS',
+            empresa:'Payc',
+            pais: '🇨🇴',
+            hora: '4:00 pm - 5:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  DanielRestrepo,
+        },{
             nombre: 'MODERADOR',
             autor: 'Nelson Giovanni Agudelo',
+            perfil:'Dinamizador Investigación aplicada desarrollo tecnológico e innovación',
             pais: '🇨🇴',
-            hora: '',
+            hora: '9:00 am - 5:00 pm',
+            empresa:'SENA CGMLTI',
+            lugar: 'Teleconferencia',
+            avatar: Nelson, 
+        }
+        
+        
+                
+    ]
+}
+
+export const miercoles = {
+    fecha: 'Miercoles 12',
+    ponencias: [
+        
+        {   
+            nombre: 'Reconocimiento facial y machine learning',        
+            autor: 'Juan Sebastian Daza',
+            perfil:'Especialista de ingeniería de software',
+            empresa:'Todosistemas',
+            pais: '🇨🇴',
+            hora: '9:00 am - 10:00 am',
+            lugar: 'Teleconferencia',
+            avatar:  JuanDaza,
+        }, {
+            nombre: 'Conociendo R y sus aplicaciones para analítica de datos',
+            autor: 'Ana María Cruz Pacheco',
+            perfil:'Matemática de la Universidad Nacional de Colombia y Docente de la Universidad Central',
+            pais: '🇨🇴',
+            hora: '10:00 am - 1:00 pm',
+            empresa:'Formulación y Gestión de Proyectos SAS.',
+            lugar: 'Teleconferencia',
+            avatar: AnaCruz, 
+        }, {   
+            nombre: 'Conectividad de APIs y analítica de datos',        
+            autor: 'Juan Sebastian Daza',
+            perfil:'Especialista de ingeniería de software',
+            empresa:'Todosistemas',
+            pais: '🇨🇴',
+            hora: '2:00 pm - 3:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  JuanDaza,
+        },
+        {   
+            nombre: 'Herramientas de Software Web para el análisis Semántico de Textos ',   
+            autor: 'Jorge Eliécer Posada Pinzón',
+            perfil:'Ingeniero Electrónico y Magister en Ingeniería Industrial',
+            empresa:'Natura',
+            pais: '🇨🇴',
+            hora: '3:00 pm - 4:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  JorgePosada,
+        },
+        {   
+            nombre: 'Análisis y procesamiento de Datos para plataformas sociales, Photopedia- innovando en la historia',   
+            autor: 'Rafael Socarrás Barros',
+            perfil:'Vicepresidente de tecnología e innovación en BODYTECH COLOMBIA',
+            empresa:'BLACK SNOW SAS',
+            pais: '🇨🇴',
+            hora: '4:00 pm - 5:00 pm',
+            lugar: 'Teleconferencia',
+            avatar: RafaelSocarras,
+        },
+        {
+            nombre: 'MODERADOR',
+            autor: 'Nelson Giovanni Agudelo',
+            perfil:'Dinamizador Investigación aplicada desarrollo tecnológico e innovación',
+            pais: '🇨🇴',
+            hora: '9:00 am - 5:00 pm',
+            empresa:'SENA CGMLTI',
             lugar: 'Teleconferencia',
             avatar: Nelson, 
         }
     ]
 }
-
-export const viernes = {
-    fecha: 'Viernes 4',
+export const jueves = {
+    fecha: 'Jueves 13',
     ponencias: [
-        {
-            nombre: 'Fake News',
-            autor: 'Juliana Colussi',
-            pais: '🇧🇷',
-            hora: '8:00 - 8:40',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar:  JulianaColussi,
-        },
-        {
-            nombre: 'Tockall - Realidad Aumentada y Marketing Proximity',
-            autor: 'Wilson Martinez',
+        
+        {   
+            nombre: 'Reconocimiento facial y machine learning',        
+            autor: 'Juan Sebastian Daza',
+            perfil:'Especialista de ingeniería de software',
+            empresa:'Todosistemas',
             pais: '🇨🇴',
-            hora: '8:50 - 9:30',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: Wilson,
-        },
-        {
-            nombre: 'Bases de la política de Economía Naranja - Ministerio de Cultura',
-            autor: 'Juan Felipe Parra',
+            hora: '9:00 am - 10:00 am',
+            lugar: 'Teleconferencia',
+            avatar:  JuanDaza,
+        }, {
+            nombre: 'Conociendo R y sus aplicaciones para analítica de datos',
+            autor: 'Ana María Cruz Pacheco',
+            perfil:'Matemática de la Universidad Nacional de Colombia y Docente de la Universidad Central',
             pais: '🇨🇴',
-            hora: '9:40 - 10:20',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: Parra, 
-        },
-        {
-            nombre: 'Economía Naranja en Colombia',
-            autor: 'Maribel García',
+            hora: '10:00 am - 1:00 pm',
+            empresa:'Formulación y Gestión de Proyectos SAS.',
+            lugar: 'Teleconferencia',
+            avatar: AnaCruz, 
+        }, {   
+            nombre: 'Conectividad de APIs y analítica de datos',        
+            autor: 'Juan Sebastian Daza',
+            perfil:'Especialista de ingeniería de software',
+            empresa:'Todosistemas',
             pais: '🇨🇴',
-            hora: '10:30 - 11:10',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: MaribelGarcia,
+            hora: '2:00 pm - 3:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  JuanDaza,
         },
-        {
-            nombre: 'Innovar en videojuegos es la unión de tecnología + software + personas + determinación',
-            autor: 'Ivonne Zulema Prado',
+        {   
+            nombre: 'Herramientas de Software Web para el análisis Semántico de Textos ',   
+            autor: 'Jorge Eliécer Posada Pinzón',
+            perfil:'Ingeniero Electrónico y Magister en Ingeniería Industrial',
+            empresa:'Natura',
             pais: '🇨🇴',
-            hora: '11:00 - 11:40',
-            lugar: 'Salon de Audiovisuales - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: Ivonne,
+            hora: '3:00 pm - 4:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  JorgePosada,
         },
-        {
-            nombre: 'Proyectos digitales y aplicaciones móviles',
-            autor: 'Hernan Alberto Cruz',
+        {   
+            nombre: 'Análisis y procesamiento de Datos para plataformas sociales, Photopedia- innovando en la historia',   
+            autor: 'Rafael Socarrás Barros',
+            perfil:'Vicepresidente de tecnología e innovación en BODYTECH COLOMBIA',
+            empresa:'BLACK SNOW SAS',
             pais: '🇨🇴',
-            hora: '11:20 - 12:00',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: HernanCruz,
+            hora: '4:00 pm - 5:00 pm',
+            lugar: 'Teleconferencia',
+            avatar: RafaelSocarras,
         },
         {
-            nombre: 'El impacto de la analítica de datos en la economía de hoy',
-            autor: 'Dora Valdez',
-            pais: '🇲🇽',
-            hora: '2:00 - 2:40',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: DoraValdez,
-        },
-        {
-            nombre: 'Gestión del cambio para un modelo de Cloud Computing - Siigo',
-            autor: 'Miguel Angel Súarez',
+            nombre: 'MODERADOR',
+            autor: 'Nelson Giovanni Agudelo',
+            perfil:'Dinamizador Investigación aplicada desarrollo tecnológico e innovación',
             pais: '🇨🇴',
-            hora: '2:50 - 3:30',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: Miguel,
-        },
-        {
-            nombre: 'El uso de las TIC en la enseñanza de la joyería',
-            autor: 'Henry Alfonso Garzón Sánchez',
+            hora: '9:00 am - 5:00 pm',
+            empresa:'SENA CGMLTI',
+            lugar: 'Teleconferencia',
+            avatar: Nelson, 
+        }
+    ]
+}
+export const viernes = {
+    fecha: 'Viernes 14',
+    ponencias: [
+        {   
+            nombre: 'Reconocimiento facial y machine learning',        
+            autor: 'Juan Sebastian Daza',
+            perfil:'Especialista de ingeniería de software',
+            empresa:'Todosistemas',
             pais: '🇨🇴',
-            hora: '3:40 - 4:20',
-            lugar: 'Auditorio - Centro de Gestión de Mercados, Logística y Tecnologías de la información',
-            avatar: Henry,
-        },
+            hora: '9:00 am - 10:00 am',
+            lugar: 'Teleconferencia',
+            avatar:  JuanDaza,
+        }, {
+            nombre: 'Conociendo R y sus aplicaciones para analítica de datos',
+            autor: 'Ana María Cruz Pacheco',
+            perfil:'Matemática de la Universidad Nacional de Colombia y Docente de la Universidad Central',
+            pais: '🇨🇴',
+            hora: '10:00 am - 1:00 pm',
+            empresa:'Formulación y Gestión de Proyectos SAS.',
+            lugar: 'Teleconferencia',
+            avatar: AnaCruz, 
+        }, {   
+            nombre: 'Conectividad de APIs y analítica de datos',        
+            autor: 'Juan Sebastian Daza',
+            perfil:'Especialista de ingeniería de software',
+            empresa:'Todosistemas',
+            pais: '🇨🇴',
+            hora: '2:00 pm - 3:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  JuanDaza,
+        }
+        ,{   
+            nombre: 'Blockchain para analítica de datos',   
+            autor: 'Nicolas Afanador',
+            perfil:'Consultor senior en transformación digital',
+            empresa:'SISMAH SAS',
+            pais: '🇨🇴',
+            hora: '3:00 pm - 5:00 pm',
+            lugar: 'Teleconferencia',
+            avatar: NicolasAfanador,
+        },{
+            nombre: 'MODERADORA',
+            autor: 'Cristina Ramírez Meneses ',
+            perfil:'Líder de grupo de investigación',
+            pais: '🇨🇴',
+            hora: '9:00 am - 5:00 pm',
+            empresa:'SUOMAYA CGMLTI SENA',
+            lugar: 'Teleconferencia',
+            avatar: CristinaRamirez, 
+        }
     ]
 }

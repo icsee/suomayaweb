@@ -3,7 +3,7 @@ import Button from '../Button'
 import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
-import flyer2 from '../../assets/img/seminario.jpg'
+import flyer2 from '../../assets/img/seminario.png'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -34,17 +34,34 @@ class Simposio extends React.Component {
               
               
               <br /> <br /> <strong>Agenda del evento: </strong>
-              <br />Diciembre 3: 
-              <br />Dora Valdez 🇵🇪 9am - 10am
-              <br />Renzo Grover Fabian Espinoza 🇵🇪 10:30 am - 11:30 am
-              <br />Carolina Santana 🇨🇴 1:00 pm - 2:30 pm
-              <br />Ehidée Isabel Gómez 🇧🇷 3pm - 4pm
+              <br />Mayo 11: 
+              <br />Juan Carlos Amézquita 9:00 am - 10:00 am
+              <br />Vladimir Ducon 10:00 am - 11:00 am
+              <br />Luis Gabriel Moreno Sandoval 11:00 am - 12:00 pm
+              <br />Juan Manuel Aparicio Camargo  2:00 pm - 3:00 pm
+              <br />Hernan Eduardo Saldaña  3:00 pm - 4:00 pm
+              <br />Daniel Restrepo Jimenez  4:00 pm - 5:00 pm
               <br />
-              <br />Diciembre 4: 
-              <br />Fabio Cortés  🇨🇭 9am - 10am 
-              <br />Edgar Oswaldo Díaz 🇲🇽 10am - 11am
-              <br />Juan Carlos Amézquita 🇨🇴 2:00 pm - 2:30 pm
-              <br />Nelson Giovanni Agudelo 🇨🇴 
+              <br />Mayo 12: 
+              <br />Juan Sebastian Daza 9:00 am - 10:00 am 
+              <br />Ana María Cruz Pacheco  10:00 am - 1:00 pm 
+              <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
+              <br />Jorge Eliécer Posada Pinzón 3:00 pm - 4:00 pm 
+              <br />Rafael Socarrás Barros   4:00 pm - 5:00 pm 
+              <br />
+              <br />Mayo 13: 
+              <br />Juan Sebastian Daza  9:00 am - 10:00 am 
+              <br />Ana María Cruz Pacheco   10:00 am - 1:00 pm 
+              <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
+              <br />Jorge Eliécer Posada Pinzón  3:00 pm - 4:00 pm 
+              <br />Rafael Socarrás Barros   4:00 pm - 5:00 pm 
+              <br />
+              <br />Mayo 14: 
+              <br />Juan Sebastian Daza  9:00 am - 10:00 am 
+              <br />Ana María Cruz Pacheco   10:00 am - 1:00 pm 
+              <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
+              <br />Nicolas Afanador  3:00 pm - 5:00 pm 
+            
               <br />
             </p>
             <div className="simposio-top-support column">
@@ -71,17 +88,10 @@ class Simposio extends React.Component {
         <section className="simposio-agenda column">
           <Agenda />
         </section>
-        {/* <section className="simposio-pics column">
-          <h1>¡Asi fue el II Simposio de Ciencia, innovación y tecnología!</h1>
-          <div className="simposio-gallery row">
-            <img src={foto1} alt="pic"/>
-            <img src={foto2} alt="pic"/>
-            <img src={foto3} alt="pic"/>
-            <img src={foto4} alt="pic"/>
-            <img src={foto5} alt="pic"/>
-            <img src={foto6} alt="pic"/>
-          </div>
-        </section> */}
+        
+        <Button link="https://www.youtube.com/channel/UCCRJH1Uau7xpxiKJE1S8ijw">
+                  ÚNETE AL EVENTO
+        </Button>
       </div>
     )
   }
