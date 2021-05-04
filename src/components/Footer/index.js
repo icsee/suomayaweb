@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from  'react-router-dom'
 import Logo from '../Logo'
 import './styles.css'
+import SocialFollow from "../SocialFollow/SocialFollow"
+
 
 const phone =
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.09 18.08">
@@ -46,6 +48,7 @@ const Footer = () =>
             <Logo />
           </div>
           <ContactBox />
+          <SocialFollow />
         </div>
         <Privacy />
       </div>
@@ -61,7 +64,7 @@ const ContactBox = () =>
 
 const Privacy = () =>
   <div className="privacy-box">
-    SENA CGMLTI 2020 Copyright © 2020 Todos los derechos reservados
+    SENA CGMLTI 2021 Copyright © 2021 Todos los derechos reservados
   </div>
 
 const Contact = () =>
