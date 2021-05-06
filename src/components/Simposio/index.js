@@ -41,6 +41,7 @@ class Simposio extends React.Component {
               <br />Juan Manuel Aparicio Camargo  2:00 pm - 3:00 pm
               <br />Hernan Eduardo Saldaña  3:00 pm - 4:00 pm
               <br />Daniel Restrepo Jimenez  4:00 pm - 5:00 pm
+              <br />Alejandro Medina Franco  5:00 pm - 6:00 pm
               <br />
               <br />Mayo 12: 
               <br />Juan Sebastian Daza 9:00 am - 10:00 am 
@@ -48,6 +49,7 @@ class Simposio extends React.Component {
               <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
               <br />Jorge Eliécer Posada Pinzón 3:00 pm - 4:00 pm 
               <br />Rafael Socarrás Barros   4:00 pm - 5:00 pm 
+              <br />Alejandro Medina Franco  5:00 pm - 6:00 pm
               <br />
               <br />Mayo 13: 
               <br />Juan Sebastian Daza  9:00 am - 10:00 am 
@@ -55,6 +57,7 @@ class Simposio extends React.Component {
               <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
               <br />Jorge Eliécer Posada Pinzón  3:00 pm - 4:00 pm 
               <br />Rafael Socarrás Barros   4:00 pm - 5:00 pm 
+              <br />Alejandro Medina Franco  5:00 pm - 6:00 pm
               <br />
               <br />Mayo 14: 
               <br />Juan Sebastian Daza  9:00 am - 10:00 am 

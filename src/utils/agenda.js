@@ -12,6 +12,7 @@ import DanielRestrepo from '../assets/img/DanielRestrepo.jpeg'
 import RafaelSocarras from '../assets/img/RafaelSocarras.jpeg'
 import NicolasAfanador from '../assets/img/NicolasAfanador.jpeg'
 import CristinaRamirez from '../assets/img/CristinaRamirez.jpeg'
+import AlejandroFranco from '../assets/img/AlejandroFranco.JPG'
 
 export const martes = {
     fecha: 'Martes 11',
@@ -73,6 +74,15 @@ export const martes = {
             hora: '4:00 pm - 5:00 pm',
             lugar: 'Teleconferencia',
             avatar:  DanielRestrepo,
+        },{   
+            nombre: 'Desarrollo de chatbots con inteligencia artificial',   
+            autor: 'Alejandro Medina Franco',
+            perfil:'Ingeniero mecatrónico - Especialista en gerencia informática',
+            empresa:'Kafka',
+            pais: '🇨🇴',
+            hora: '5:00 pm - 6:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  AlejandroFranco,
         },{
             nombre: 'MODERADOR',
             autor: 'Nelson Giovanni Agudelo',
@@ -140,6 +150,15 @@ export const miercoles = {
             hora: '4:00 pm - 5:00 pm',
             lugar: 'Teleconferencia',
             avatar: RafaelSocarras,
+        },{   
+            nombre: 'Apropiación de Tecnología de procesamiento de lenguaje natural (PNL)',   
+            autor: 'Alejandro Medina Franco',
+            perfil:'Ingeniero mecatrónico - Especialista en gerencia informática',
+            empresa:'Kafka',
+            pais: '🇨🇴',
+            hora: '5:00 pm - 6:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  AlejandroFranco,
         },
         {
             nombre: 'MODERADOR',
@@ -204,6 +223,15 @@ export const jueves = {
             hora: '4:00 pm - 5:00 pm',
             lugar: 'Teleconferencia',
             avatar: RafaelSocarras,
+        },{   
+            nombre: 'Apropiación de Tecnología de procesamiento de lenguaje natural (PNL)',   
+            autor: 'Alejandro Medina Franco',
+            perfil:'Ingeniero mecatrónico - Especialista en gerencia informática',
+            empresa:'Kafka',
+            pais: '🇨🇴',
+            hora: '5:00 pm - 6:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  AlejandroFranco,
         },
         {
             nombre: 'MODERADOR',
