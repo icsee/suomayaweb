@@ -13,7 +13,9 @@ import RafaelSocarras from '../assets/img/RafaelSocarras.jpeg'
 import NicolasAfanador from '../assets/img/NicolasAfanador.jpeg'
 import CristinaRamirez from '../assets/img/CristinaRamirez.jpeg'
 import AlejandroFranco from '../assets/img/AlejandroFranco.JPG'
-
+import OscarBaquero from '../assets/img/OscarBaquero.jpg'
+import JorgeRoa from '../assets/img/JorgeRoa.jpg'
+import CamiloMendivelso from '../assets/img/CamiloMendivelso.jpg'
 export const martes = {
     fecha: 'Martes 11',
     ponencias: [
@@ -100,66 +102,28 @@ export const martes = {
 }
 
 export const miercoles = {
-    fecha: 'Miercoles 12',
+    fecha: 'Miercoles 7',
     ponencias: [
         
         {   
-            nombre: 'Reconocimiento facial y machine learning',        
-            autor: 'Juan Sebastian Daza',
-            perfil:'Especialista de ingeniería de software',
-            empresa:'Todosistemas',
+            nombre: 'Sistemas de comunicaciones en Nb-IoT',        
+            autor: 'Camilo Mendivelso',
+            perfil:'Ingeniero electrónico, Maestria en ingeniería Electrónica',
+            empresa:'Grupo de investigación SUOMAYA',
             pais: '🇨🇴',
-            hora: '9:00 am - 10:00 am',
+            hora: '8:30 am - 9:30 am',
             lugar: 'Teleconferencia',
-            avatar:  JuanDaza,
-        }, {
-            nombre: 'Conociendo R y sus aplicaciones para analítica de datos',
-            autor: 'Ana María Cruz Pacheco',
-            perfil:'Matemática de la Universidad Nacional de Colombia y Docente de la Universidad Central',
+            avatar:  CamiloMendivelso,
+        },  {
+            nombre: 'Acceso a la información, primer paso en reducción efectiva del consumo de de energía',
+            autor: 'Vladimir Ducon',
+            perfil:'Ingeniero Electrónico con un MBA de la Universidad Javeriana',
             pais: '🇨🇴',
-            hora: '10:00 am - 1:00 pm',
-            empresa:'Formulación y Gestión de Proyectos SAS.',
+            hora: '11:30 am - 12:30 am',
+            empresa:'Dromedario (Wavelet sas)',
             lugar: 'Teleconferencia',
-            avatar: AnaCruz, 
-        }, {   
-            nombre: 'Conectividad de APIs y analítica de datos',        
-            autor: 'Juan Sebastian Daza',
-            perfil:'Especialista de ingeniería de software',
-            empresa:'Todosistemas',
-            pais: '🇨🇴',
-            hora: '2:00 pm - 3:00 pm',
-            lugar: 'Teleconferencia',
-            avatar:  JuanDaza,
-        },
-        {   
-            nombre: 'Herramientas de Software Web para el análisis Semántico de Textos ',   
-            autor: 'Jorge Eliécer Posada Pinzón',
-            perfil:'Ingeniero Electrónico y Magister en Ingeniería Industrial',
-            empresa:'Natura',
-            pais: '🇨🇴',
-            hora: '3:00 pm - 4:00 pm',
-            lugar: 'Teleconferencia',
-            avatar:  JorgePosada,
-        },
-        {   
-            nombre: 'Análisis y procesamiento de Datos para plataformas sociales, Photopedia- innovando en la historia',   
-            autor: 'Rafael Socarrás Barros',
-            perfil:'Vicepresidente de tecnología e innovación en BODYTECH COLOMBIA',
-            empresa:'BLACK SNOW SAS',
-            pais: '🇨🇴',
-            hora: '4:00 pm - 5:00 pm',
-            lugar: 'Teleconferencia',
-            avatar: RafaelSocarras,
-        },{   
-            nombre: 'Apropiación de Tecnología de procesamiento de lenguaje natural (PNL)',   
-            autor: 'Alejandro Medina Franco',
-            perfil:'Ingeniero mecatrónico - Especialista en gerencia informática',
-            empresa:'Kafka',
-            pais: '🇨🇴',
-            hora: '5:00 pm - 6:00 pm',
-            lugar: 'Teleconferencia',
-            avatar:  AlejandroFranco,
-        },
+            avatar: VladimirDucon,
+         },
         {
             nombre: 'MODERADOR',
             autor: 'Nelson Giovanni Agudelo',
@@ -173,65 +137,57 @@ export const miercoles = {
     ]
 }
 export const jueves = {
-    fecha: 'Jueves 13',
+    fecha: 'Jueves 8',
     ponencias: [
         
         {   
-            nombre: 'Reconocimiento facial y machine learning',        
+            nombre: 'Reconocimiento biométrico y analítica de datos',        
             autor: 'Juan Sebastian Daza',
             perfil:'Especialista de ingeniería de software',
             empresa:'Todosistemas',
             pais: '🇨🇴',
-            hora: '9:00 am - 10:00 am',
+            hora: '8:30 am - 10:30 am',
             lugar: 'Teleconferencia',
             avatar:  JuanDaza,
-        }, {
-            nombre: 'Conociendo R y sus aplicaciones para analítica de datos',
-            autor: 'Ana María Cruz Pacheco',
-            perfil:'Matemática de la Universidad Nacional de Colombia y Docente de la Universidad Central',
-            pais: '🇨🇴',
-            hora: '10:00 am - 1:00 pm',
-            empresa:'Formulación y Gestión de Proyectos SAS.',
-            lugar: 'Teleconferencia',
-            avatar: AnaCruz, 
         }, {   
-            nombre: 'Conectividad de APIs y analítica de datos',        
-            autor: 'Juan Sebastian Daza',
-            perfil:'Especialista de ingeniería de software',
-            empresa:'Todosistemas',
+            nombre: 'Realidad Virtual con Implementación de Interacciones Inmersivas en fotos 360',        
+            autor: 'Juan Manuel Aparicio Camargo',
+            perfil:'Director Ejecutivo',
+            empresa:'Gaira Consulting Group',
             pais: '🇨🇴',
-            hora: '2:00 pm - 3:00 pm',
+            hora: '10:30 am - 11:30 am',
             lugar: 'Teleconferencia',
-            avatar:  JuanDaza,
+            avatar:  JuanAparicio,
         },
         {   
-            nombre: 'Herramientas de Software Web para el análisis Semántico de Textos ',   
-            autor: 'Jorge Eliécer Posada Pinzón',
-            perfil:'Ingeniero Electrónico y Magister en Ingeniería Industrial',
-            empresa:'Natura',
+            nombre: 'Aplicación de Interacciones Inmersivas en fotos 360 para TITANIA',        
+            autor: 'Hernan Eduardo Saldaña.',
+            perfil:' Director Creativo',
+            empresa:'Gaira Consulting Group',
             pais: '🇨🇴',
-            hora: '3:00 pm - 4:00 pm',
+            hora: '11:30 am - 12:30 pm',
             lugar: 'Teleconferencia',
-            avatar:  JorgePosada,
+            avatar:  HernanSaldana,
         },
-        {   
-            nombre: 'Análisis y procesamiento de Datos para plataformas sociales, Photopedia- innovando en la historia',   
-            autor: 'Rafael Socarrás Barros',
-            perfil:'Vicepresidente de tecnología e innovación en BODYTECH COLOMBIA',
-            empresa:'BLACK SNOW SAS',
+         {   
+            nombre: 'Extracción de datos con Python',        
+            autor: 'Oscar Parra Baquero',
+            perfil:'Magister en ciencias matemáticas.',
+            empresa:'NATURA',
+            pais: '🇨🇴',
+            hora: '2:00 pm - 4:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  OscarBaquero,
+        },
+          {   
+            nombre: 'Blockchain para analítica de datos',   
+            autor: 'Por definir',
+            perfil:'Por definir',
+            empresa:'SISMAH SAS',
             pais: '🇨🇴',
             hora: '4:00 pm - 5:00 pm',
             lugar: 'Teleconferencia',
             avatar: RafaelSocarras,
-        },{   
-            nombre: 'Apropiación de Tecnología de procesamiento de lenguaje natural (PNL)',   
-            autor: 'Alejandro Medina Franco',
-            perfil:'Ingeniero mecatrónico - Especialista en gerencia informática',
-            empresa:'Kafka',
-            pais: '🇨🇴',
-            hora: '5:00 pm - 6:00 pm',
-            lugar: 'Teleconferencia',
-            avatar:  AlejandroFranco,
         },
         {
             nombre: 'MODERADOR',
@@ -246,46 +202,46 @@ export const jueves = {
     ]
 }
 export const viernes = {
-    fecha: 'Viernes 14',
+    fecha: 'Viernes 9',
     ponencias: [
         {   
-            nombre: 'Reconocimiento facial y machine learning',        
+            nombre: 'Reconocimiento biométrico y analítica de datos',        
             autor: 'Juan Sebastian Daza',
             perfil:'Especialista de ingeniería de software',
             empresa:'Todosistemas',
             pais: '🇨🇴',
-            hora: '9:00 am - 10:00 am',
+            hora: '8:30 am - 10:30 am',
             lugar: 'Teleconferencia',
             avatar:  JuanDaza,
-        }, {
-            nombre: 'Conociendo R y sus aplicaciones para analítica de datos',
-            autor: 'Ana María Cruz Pacheco',
-            perfil:'Matemática de la Universidad Nacional de Colombia y Docente de la Universidad Central',
+        },{   
+            nombre: 'Plataforma Azure DevOPs',        
+            autor: 'Jorge Gil Roa',
+            perfil:'Ingeniero de software.',
+            empresa:'KAFKA',
             pais: '🇨🇴',
-            hora: '10:00 am - 1:00 pm',
-            empresa:'Formulación y Gestión de Proyectos SAS.',
+            hora: '10:30 am - 12:30 pm',
             lugar: 'Teleconferencia',
-            avatar: AnaCruz, 
+            avatar:  JorgeRoa,
+        },{   
+            nombre: 'Extracción de datos con Python',        
+            autor: 'Oscar Parra Baquero',
+            perfil:'Magister en ciencias matemáticas.',
+            empresa:'NATURA',
+            pais: '🇨🇴',
+            hora: '2:00 pm - 4:00 pm',
+            lugar: 'Teleconferencia',
+            avatar:  OscarBaquero,
         }, {   
-            nombre: 'Conectividad de APIs y analítica de datos',        
-            autor: 'Juan Sebastian Daza',
-            perfil:'Especialista de ingeniería de software',
-            empresa:'Todosistemas',
+            nombre: 'Machine Learning en Orange Data Mining',   
+            autor: 'Jorge Eliécer Posada Pinzón',
+            perfil:'Ingeniero Electrónico y Magister en Ingeniería Industrial',
+            empresa:'NATURA',
             pais: '🇨🇴',
-            hora: '2:00 pm - 3:00 pm',
+            hora: '4:00 pm - 5:00 pm',
             lugar: 'Teleconferencia',
-            avatar:  JuanDaza,
-        }
-        ,{   
-            nombre: 'Blockchain para analítica de datos',   
-            autor: 'Nicolas Afanador',
-            perfil:'Consultor senior en transformación digital',
-            empresa:'SISMAH SAS',
-            pais: '🇨🇴',
-            hora: '3:00 pm - 5:00 pm',
-            lugar: 'Teleconferencia',
-            avatar: NicolasAfanador,
-        },{
+            avatar:  JorgePosada,
+        },
+      {
             nombre: 'MODERADORA',
             autor: 'Cristina Ramírez Meneses ',
             perfil:'Líder de grupo de investigación',

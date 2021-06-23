@@ -3,7 +3,8 @@ import Button from '../Button'
 import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
-import flyer2 from '../../assets/img/seminario.png'
+import flyer from '../../assets/img/seminario.png'
+import flyer2 from '../../assets/img/seminario2.jpeg'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -23,7 +24,7 @@ class Simposio extends React.Component {
       <div className="simposio">
         <section className="simposio-top row">
           <div className="simposio-top-info column">
-            <h1>II SEMINARIO DE INVESTIGACIÓN E INNOVACION</h1>
+            <h1>VI SIMPOSIO DE CIENCIA INNOVACIÓN Y TECNOLOGÍA</h1>
             <h2>GRUPO SUOMAYA</h2>
             <p>
               Este evento surge ante la necesidad de difundir  y posicionar  
@@ -34,36 +35,26 @@ class Simposio extends React.Component {
               
               
               <br /> <br /> <strong>Agenda del evento: </strong>
-              <br />Mayo 11: 
-              <br />Juan Carlos Amézquita 9:00 am - 10:00 am
-              <br />Vladimir Ducon 10:00 am - 11:00 am
-              <br />Luis Gabriel Moreno Sandoval 11:00 am - 12:00 pm
-              <br />Juan Manuel Aparicio Camargo  2:00 pm - 3:00 pm
-              <br />Hernan Eduardo Saldaña  3:00 pm - 4:00 pm
-              <br />Daniel Restrepo Jimenez  4:00 pm - 5:00 pm
-              <br />Alejandro Medina Franco  5:00 pm - 6:00 pm
+              <br />Julio 7: 
+              <br />Camilo Mendivelso 8:30 am - 9:30 am
+              <br />Vladimir Ducon 11:30 am - 12:30 am
+              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
+              <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm
               <br />
-              <br />Mayo 12: 
-              <br />Juan Sebastian Daza 9:00 am - 10:00 am 
-              <br />Ana María Cruz Pacheco  10:00 am - 1:00 pm 
-              <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
-              <br />Jorge Eliécer Posada Pinzón 3:00 pm - 4:00 pm 
-              <br />Rafael Socarrás Barros   4:00 pm - 5:00 pm 
-              <br />Alejandro Medina Franco  5:00 pm - 6:00 pm
+              <br />Julio 8: 
+              <br />Juan Sebastian Daza 8:30 am - 10:30 am 
+              <br />Juan Manuel Aparicio Camargo  10:30 am - 11:30 pm               
+              <br />Hernan Eduardo Saldaña  11:30 am - 12:30 pm 
+              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
+              <br />Por definir 4:00 pm - 6:00 pm
               <br />
-              <br />Mayo 13: 
-              <br />Juan Sebastian Daza  9:00 am - 10:00 am 
-              <br />Ana María Cruz Pacheco   10:00 am - 1:00 pm 
-              <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
-              <br />Jorge Eliécer Posada Pinzón  3:00 pm - 4:00 pm 
-              <br />Rafael Socarrás Barros   4:00 pm - 5:00 pm 
-              <br />Alejandro Medina Franco  5:00 pm - 6:00 pm
+              <br />Julio 9: 
+              <br />Juan Sebastian Daza  8:30 am - 10:30 am 
+              <br />Jorge Gil Roa 10:30 am - 12:30 pm 
+              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
+              <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm
               <br />
-              <br />Mayo 14: 
-              <br />Juan Sebastian Daza  9:00 am - 10:00 am 
-              <br />Ana María Cruz Pacheco   10:00 am - 1:00 pm 
-              <br />Juan Sebastian Daza  2:00 pm - 3:00 pm 
-              <br />Nicolas Afanador  3:00 pm - 5:00 pm 
+              
             
               <br />
             </p>
