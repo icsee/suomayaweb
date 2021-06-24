@@ -4,7 +4,7 @@ import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
 import flyer from '../../assets/img/seminario.png'
-import flyer2 from '../../assets/img/seminario2.png'
+import flyer2 from '../../assets/img/simposio3.png'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -37,16 +37,17 @@ class Simposio extends React.Component {
               <br /> <br /> <strong>Agenda del evento: </strong>
               <br />Julio 7: 
               <br />Camilo Mendivelso 8:30 am - 9:30 am
-              <br />Vladimir Ducon 11:30 am - 12:30 am
+              <br /> MBA. Rogger O. Morán Santamaría 10:30 am - 11:30 am
+              <br />Vladimir Ducon 11:30 am - 12:30 pm
               <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
               <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm
               <br />
               <br />Julio 8: 
               <br />Juan Sebastian Daza 8:30 am - 10:30 am 
-              <br />Juan Manuel Aparicio Camargo  10:30 am - 11:30 pm               
+              <br />Juan Manuel Aparicio Camargo  10:30 am - 11:30 am              
               <br />Hernan Eduardo Saldaña  11:30 am - 12:30 pm 
               <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
-              <br />Por definir 4:00 pm - 6:00 pm
+              <br />Nicolas Afanador 4:00 pm - 6:00 pm
               <br />
               <br />Julio 9: 
               <br />Juan Sebastian Daza  8:30 am - 10:30 am 
