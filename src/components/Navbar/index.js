@@ -28,7 +28,7 @@ const Navbar = ({variant, type}) => {
             Proyectos
           </NavLink>
           <NavLink
-            to='/seminario'
+            to='/simposio'
             activeClassName="selected"
             >
             Simposio
