@@ -16,6 +16,7 @@ import AlejandroFranco from '../assets/img/AlejandroFranco.JPG'
 import OscarBaquero from '../assets/img/OscarBaquero.jpg'
 import JorgeRoa from '../assets/img/JorgeRoa.jpg'
 import CamiloMendivelso from '../assets/img/CamiloMendivelso.jpg'
+import RoggerMoran from '../assets/img/RoggerMoran.JPG'
 export const martes = {
     fecha: 'Martes 11',
     ponencias: [
@@ -114,7 +115,18 @@ export const miercoles = {
             hora: '8:30 am - 9:30 am',
             lugar: 'Teleconferencia',
             avatar:  CamiloMendivelso,
-        },  {
+        }, {
+            nombre: 'Sistema  de Business Intelligence para aporyar la gestión competitiva exportadora de las Mypes peruanas.',
+            autor: 'MBA. Rogger O. Morán Santamaría',
+            perfil:'Gerente General de ICOMEX PERU',
+            pais: 'pe',
+            hora: '11:30 am - 12:30 am',
+            empresa:'Universidad César Vallejo de Perú',
+            lugar: 'Teleconferencia',
+            avatar: RoggerMoran,
+         },
+        
+        {
             nombre: 'Acceso a la información, primer paso en reducción efectiva del consumo de de energía',
             autor: 'Vladimir Ducon',
             perfil:'Ingeniero Electrónico con un MBA de la Universidad Javeriana',
@@ -181,13 +193,13 @@ export const jueves = {
         },
           {   
             nombre: 'Blockchain para analítica de datos',   
-            autor: 'Por definir',
-            perfil:'Por definir',
+            autor: 'Nicolas Afanador',
+            perfil:'',
             empresa:'SISMAH SAS',
             pais: '🇨🇴',
             hora: '4:00 pm - 5:00 pm',
             lugar: 'Teleconferencia',
-            avatar: RafaelSocarras,
+            avatar: NicolasAfanador,
         },
         {
             nombre: 'MODERADOR',
