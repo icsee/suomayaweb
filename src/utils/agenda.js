@@ -5,12 +5,13 @@ import HernanSaldana from '../assets/img/HernanSaldana.png'
 import VladimirDucon from '../assets/img/vladimirDucon.jpg'
 import Nelson from '../assets/img/nelson.png'
 import juanamezquita from '../assets/img/juanamezquita.jpeg'
-import AnaCruz from '../assets/img/AnaCruz.png'
+import FabyVelarde from '../assets/img/FabyVelarde.JPG'
 import LuisMoreno from '../assets/img/LuisMoreno.jpeg'
 import JorgePosada from '../assets/img/JorgePosada.jpeg'
+import JorgeSantos from '../assets/img/JorgeSantos.jpg'
 import DanielRestrepo from '../assets/img/DanielRestrepo.jpeg'
-import RafaelSocarras from '../assets/img/RafaelSocarras.jpeg'
-import NicolasAfanador from '../assets/img/NicolasAfanador.jpeg'
+import NickNeal from '../assets/img/NickNeal.JPG'
+import BeatrizBotello from '../assets/img/BeatrizBotello.JPG'
 import CristinaRamirez from '../assets/img/CristinaRamirez.jpeg'
 import AlejandroFranco from '../assets/img/AlejandroFranco.JPG'
 import OscarBaquero from '../assets/img/OscarBaquero.jpg'
@@ -112,29 +113,47 @@ export const miercoles = {
             perfil:'Ingeniero electrónico, Maestria en ingeniería Electrónica',
             empresa:'Grupo de investigación SUOMAYA',
             pais: '🇨🇴',
-            hora: '8:30 am - 9:30 am',
+            hora: '8:30 am - 9:00 am',
             lugar: 'Teleconferencia',
             avatar:  CamiloMendivelso,
+        },{   
+            nombre:'El algoritmo perfecto: Inteligencia Artificial (IA) + Impacto social',        
+            autor: 'Faby Velarde Galicia',
+            perfil:'Maestrante en ciencia de datos',
+            empresa:'Manager de emprendimiento de la iniciativa fAlr LAC Jalisco',
+            pais: '🇲🇽',
+            hora: '9:00 am - 9:45 am',
+            lugar: 'Teleconferencia',
+            avatar:  FabyVelarde,
+        },{   
+            nombre:'Innovating Humanity',        
+            autor: 'Nick Neal-Useche',
+            perfil:'Ingeniero, profesor universitario y empresario innovador en energía sostenible.',
+            empresa:'Sustainable energy businesses consultancy.',
+            pais: '🇬🇧',
+            hora: '9:50 am - 10:35 am',
+            lugar: 'Teleconferencia',
+            avatar:  NickNeal,
         }, {
             nombre: 'Sistema  de Business Intelligence para aporyar la gestión competitiva exportadora de las Mypes peruanas.',
             autor: 'MBA. Rogger O. Morán Santamaría',
             perfil:'Gerente General de ICOMEX PERU',
             pais: '🇵🇪',
-            hora: '10:30 am - 11:30 am',
+            hora: '10:40 am - 11:25 am',
             empresa:'Universidad César Vallejo de Perú',
             lugar: 'Teleconferencia',
             avatar: RoggerMoran,
          },
         
         {
-            nombre: 'Acceso a la información, primer paso en reducción efectiva del consumo de de energía',
-            autor: 'Vladimir Ducon',
-            perfil:'Ingeniero Electrónico con un MBA de la Universidad Javeriana',
+            nombre: 'De Retos Gigantes a Cambios Excepcionales',
+            autor: 'Jorge Santos',
+            perfil:'Especialista en Estrategia e Innovación, con estudios en Gerencia, Big Data y Estrategia Disruptiva.',
             pais: '🇨🇴',
-            hora: '11:30 am - 12:30 pm',
-            empresa:'Dromedario (Wavelet sas)',
+            hora: '11:30 am - 12:15 pm',
+            empresa:'Corporación Ruta N de Medellín.',
             lugar: 'Teleconferencia',
-            avatar: VladimirDucon,
+            avatar: JorgeSantos,
          },
         {
             nombre: 'MODERADOR',
@@ -192,14 +211,14 @@ export const jueves = {
             avatar:  OscarBaquero,
         },
           {   
-            nombre: 'Blockchain para analítica de datos',   
-            autor: 'Nicolas Afanador',
-            perfil:'Consultor senior en transformación digital',
+            nombre: 'Blockchain y analítica de datos',   
+            autor: 'Beatriz Botello',
+            perfil:'Magister en Administración de Negocios MBA, con énfasis en Marketing y Negocios Internacionales.',
             empresa:'SISMAH SAS',
             pais: '🇨🇴',
             hora: '4:00 pm - 5:00 pm',
             lugar: 'Teleconferencia',
-            avatar: NicolasAfanador,
+            avatar: BeatrizBotello,
         },
         {
             nombre: 'MODERADOR',

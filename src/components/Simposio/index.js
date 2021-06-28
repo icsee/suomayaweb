@@ -36,24 +36,24 @@ class Simposio extends React.Component {
               
               <br /> <br /> <strong>Agenda del evento: </strong>
               <br />Julio 7: 
-              <br />Camilo Mendivelso 8:30 am - 9:30 am
-              <br /> MBA. Rogger O. Morán Santamaría 10:30 am - 11:30 am
-              <br />Vladimir Ducon 11:30 am - 12:30 pm
-              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
-              <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm
+              <br />Camilo Mendivelso 8:30 am - 9:00 am  🇨🇴
+              <br />Faby Velarde Galicia 9:00 am - 9:45 am  🇲🇽 
+              <br />Nick Neal-Useche 9:50 am - 10:35 am 🇬🇧
+              <br />Rogger O. Morán S. 10:40 am - 11:25 am 🇵🇪
+              <br />Jorge Santos 11:30 am - 12:15 pm 🇨🇴
               <br />
               <br />Julio 8: 
-              <br />Juan Sebastian Daza 8:30 am - 10:30 am 
-              <br />Juan Manuel Aparicio Camargo  10:30 am - 11:30 am              
-              <br />Hernan Eduardo Saldaña  11:30 am - 12:30 pm 
-              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
-              <br />Nicolas Afanador 4:00 pm - 6:00 pm
+              <br />Juan Sebastian Daza 8:30 am - 10:30 am 🇨🇴
+              <br />Juan Manuel Aparicio Camargo  10:30 am - 11:30 am 🇨🇴             
+              <br />Hernan Eduardo Saldaña  11:30 am - 12:30 pm 🇨🇴
+              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm  🇨🇴
+              <br />Nicolas Afanador 4:00 pm - 6:00 pm  🇨🇴
               <br />
               <br />Julio 9: 
-              <br />Juan Sebastian Daza  8:30 am - 10:30 am 
-              <br />Jorge Gil Roa 10:30 am - 12:30 pm 
-              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm
-              <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm
+              <br />Juan Sebastian Daza  8:30 am - 10:30 am  🇨🇴 
+              <br />Jorge Gil Roa 10:30 am - 12:30 pm 🇨🇴
+              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm 🇨🇴
+              <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm 🇨🇴
               <br />
               
             
