@@ -4,7 +4,7 @@ import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
 import flyer from '../../assets/img/seminario.png'
-import flyer2 from '../../assets/img/simposio3.png'
+import flyer2 from '../../assets/img/poster1-01.png'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -27,11 +27,11 @@ class Simposio extends React.Component {
             <h1>VI SIMPOSIO DE CIENCIA INNOVACIÓN Y TECNOLOGÍA</h1>
             <h2>GRUPO SUOMAYA</h2>
             <p>
-              Este evento surge ante la necesidad de difundir  y posicionar  
-              los  procesos de  investigación, desarrollo tecnológico e innovación
-              realizados en CGMLTI como también los avances y resultados de los
-              proyectos  SENNOVA y cuenta con la participación de diferentes invitados
-              como empresarios, universidades, IES, líderes SENNOVA e investigadores. 
+              Este evento busca difundir las iniciativas, avances y resultados 
+              de los proyectos de investigación, desarrollo tecnológico e innovación 
+              alineados a las temáticas de investigación del grupo Suomaya, generados por
+              la academia y las empresas ganadoras de convocatorias de innovación, a la
+              comunidad SENA, SENNOVA y público en general.
               
               
               <br /> <br /> <strong>Agenda del evento: </strong>
