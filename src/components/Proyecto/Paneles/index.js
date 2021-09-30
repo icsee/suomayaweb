@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-
+import Button from "../../Button"
 
 
 import MapContainer from '../Interoperabilidad/map.js'
@@ -60,69 +60,14 @@ class ProyectoInventarios extends React.Component {
     
     
   
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+
 
 
 
   }
 
 
-  componentDidMount() {
-
-    window.scrollTo(0,0);
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-/*
-    this.ws = new WebSocket("wss://suomayaback.azurewebsites.net/suomayaback-websocket");
-
-
-    this.ws.onmessage = e => {*/
-      var socket = new SockJS('https://suomaya.co:8081/suomayaApiRest/suomayaback-websocket');
-    this.state.stompClient = Stomp.over(socket);
-    this.state.stompClient.connect({}, frame=> {
-      //  setConnected(true);
-        console.log('Connected: ' + frame);
-        this.state.stompClient.subscribe('/topic/iot', e => {
-           
-       
-   //   const messageData = JSON.parse(e);
-   var  messageData = JSON.parse(e.body).content;
-
-          const message=JSON.parse( messageData.substring(0,messageData.search('}:')+1) );
-   console.log(message);
-
-      const oldBtcDataSet = this.state.lineChartData.data.datasets[0];
-      const newBtcDataSet = { ...oldBtcDataSet };
-      newBtcDataSet.data.push(message.rssiParticle);
-      
- 
-      var oldlabel = this.state.lineChartData.labels;
-      var newLabel = { ...oldlabel };
-      var array= Object.values(newLabel);
-      console.log(      message.rssiParticle);
-      var y =new Date().toLocaleTimeString();
-      array.push(y);
-      if (newBtcDataSet.data.length>10)
-      {
-       newBtcDataSet.data.shift(); 
-       array.shift(); 
-      }
- 
-      const newChartData = {
-        ...this.state.lineChartData,
-        datasets: [newBtcDataSet],
-        labels: array};
- 
- 
-      this.setState({ lineChartData: newChartData });
-    });
-  });
-
-   
-
-   
-  }
-
+  
   
   render() {
     var x =this.state.width;
@@ -145,46 +90,24 @@ class ProyectoInventarios extends React.Component {
           }
             <iframe src="https://giovanniagudelo.github.io/Paneles-Solares/" height="700" width="1000" frameborder="0"></iframe>
             </div>
-        <div className='row chart-area-p'>
-            <div className="chart-area-p" >
-            <h2>Temperatura</h2>
-                  <Chart
-                  data={this.state.lineChartData}
-                  options={this.state.lineChartOptions}
-                />
-            </div>
-            <div className="chart-area-p" >
-            <h2>Presión</h2>
-                  <Chart
-                  data={this.state.lineChartData}
-                  options={this.state.lineChartOptions}
-                />
-            </div>
-            </div>
+        
             
+              <nav><ul>
+          <li><a href="https://dashboard.suomaya.co/">
+          
+            <Button link="https://dashboard.suomaya.co/">
+                    Aplicación
+                </Button>
+          
+        
+          </a></li>
 
-            <div className='row chart-area-p'>
-            <div className="chart-area-p" >
-            <h2>Humedad</h2>
-                  <Chart
-                  data={this.state.lineChartData}
-                  options={this.state.lineChartOptions}
-                />
-            </div>
-            <div className="chart-area-p" >
-            <h2>Decibeles </h2>
-                  <Chart
-                  data={this.state.lineChartData}
-                  options={this.state.lineChartOptions}
-                />
-            </div>
-            </div>
-            <div className="map-area">
+        
+
+      
+        </ul></nav>
+              
            
-                <MapContainer/>
-
-            </div>
-
           </section>
           </center>
 </div>
@@ -195,48 +118,7 @@ class ProyectoInventarios extends React.Component {
 
   
   
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-    clearInterval(this.intervalUpdate);
-    if (this.state.stompClient!=null)
-    this.state.stompClient.disconnect();
-  }
   
-  updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
-  }
-
-   showData() {
-     console.log('holap');
-     console.log(     this.state.lineChartData.data);
-     var x=Math.floor(Math.random() * 50) + 51  ;
-
-     const oldBtcDataSet = this.state.lineChartData.data.datasets[0];
-     const newBtcDataSet = { ...oldBtcDataSet };
-     newBtcDataSet.data.push(x);
-     
-
-     var oldlabel = this.state.lineChartData.labels;
-     var newLabel = { ...oldlabel };
-     var array= Object.values(newLabel);
-     console.log(      array);
-     var y =new Date().toLocaleTimeString();
-     array.push(y);
-     if (newBtcDataSet.data.length>10)
-     {
-      newBtcDataSet.data.shift(); 
-      array.shift(); 
-     }
-
-     const newChartData = {
-       ...this.state.lineChartData,
-       datasets: [newBtcDataSet],
-       labels: array};
-
-
-     this.setState({ lineChartData: newChartData });
-
-  }
 }
 
 
