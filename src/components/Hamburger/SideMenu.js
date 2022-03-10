@@ -50,7 +50,7 @@ const Links = ({onClick}) => (
         activeClassName="selected"
         onClick={onClick}
         >
-        Simposio
+        Seminario
       </NavLink>
       <NavLink
         to='/fotofilm'

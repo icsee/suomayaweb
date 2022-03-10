@@ -25,7 +25,7 @@ import ProyectoLogisticaProductoEdit from './components/Proyecto/Logistica/Produ
 import ProyectoInventarios from './components/Proyecto/Inventarios'
 import ProyectoInteroperabilidad from './components/Proyecto/Interoperabilidad'
 import ProyectoPaneles from './components/Proyecto/Paneles'
-import Simposio from './components/Simposio'
+import Seminario from './components/Seminario'
 import TopSection from './components/TopSection'
 import Footer from './components/Footer'
 import Semillero from './components/Semillero'
@@ -72,7 +72,7 @@ class App extends Component {
                     <Route path="/proyecto/inventarios" render={() => <ProyectoInventarios />}/>                    
                     <Route path="/proyecto/interoperabilidad" render={() => <ProyectoInteroperabilidad />}/>
                     <Route path="/proyecto/paneles" render={() => <ProyectoPaneles />}/>
-                    <Route path="/simposio" render={() => <Simposio />}/>
+                    <Route path="/seminario" render={() => <Seminario />}/>
                     <Route path="/fotofilm" render={() => <Fotofilm />}/>
                     <Route path="/cortometraje" render={() => <Concurso category="cortometraje" />}/>
                     <Route path="/fotografia" render={() => <Concurso category="fotografia" />}/>
