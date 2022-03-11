@@ -100,10 +100,10 @@ const NavLinks = () =>
         Proyectos
       </NavLink>
       <NavLink
-        to='/simposio'
+        to='/seminario'
         activeClassName="selected"
         >
-        Simposio
+        Seminario
       </NavLink>
     </div>
   </div>

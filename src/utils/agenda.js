@@ -59,7 +59,7 @@ export const miercoles = {
         },{   
             nombre:'Reclutamiento automatizado, basado en Machine Learning.',        
             autor: 'Nelson Insignares Molina',
-            perfil:'Magister en mercadeo universidad de los andes científico de datos en El Backoffice S.A.S.',
+            perfil:'Magister en mercadeo universidad de los andes, Director de analítica en El Backoffice S.A.S',
             empresa:'EL BACKOFFICE SAS',
             pais: '🇨🇴',
             hora: '9:10 am - 9:30 am',
@@ -206,7 +206,7 @@ export const jueves = {
         {   
             nombre: 'Transformación digital mediante plataformas en la nube- Sala 3.', 
             autor: 'Nelson Insignares Molina',
-            perfil:'Magister en mercadeo universidad de los andes científico de datos en El Backoffice S.A.S.',
+            perfil:'Magister en mercadeo universidad de los andes, Director de analítica en El Backoffice S.A.S.',
             empresa:'EL BACKOFFICE SAS',
             pais: '🇨🇴',
             hora: '9:00 am - 12:00 Pm',
@@ -297,7 +297,7 @@ export const viernes = {
         {   
             nombre: 'Transformación digital mediante plataformas en la nube- Sala 3.', 
             autor: 'Nelson Insignares Molina',
-            perfil:'Magister en mercadeo universidad de los andes científico de datos en El Backoffice S.A.S.',
+            perfil:'Magister en mercadeo universidad de los andes, Director de analítica en El Backoffice S.A.S en El Backoffice S.A.S.',
             empresa:'EL BACKOFFICE SAS',
             pais: '🇨🇴',
             hora: '9:00 am - 12:00 Pm',
