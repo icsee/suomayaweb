@@ -59,7 +59,7 @@ class Simposio extends React.Component {
               </div>
               {/* <p>Inscripciones cerradas</p> 
               https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform*/}
-              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSeDGZ2pKucJ0UqP8YDIewhcBzrzQm9kes7FjvimHU7TMIaBlw/viewform?vc=0&c=0&w=1&flr=0&gxids=7628">
+              <Button link="https://forms.gle/L824eAM6fCxnvrog9">
                   INSCRÍBETE AQUÍ
               </Button>
             </div>
