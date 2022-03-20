@@ -194,7 +194,7 @@ export const jueves = {
             lugar: 'Teleconferencia',
             avatar: AlfredoOrdonez,
         },{   
-            nombre:'Reclutamiento automatizado, basado en Machine Learning - Sala 1',        
+            nombre:'Transformación digital mediante plataformas en la nube - Sala 1',        
             autor: 'José Alveiro Goyeneche Wilches',
             perfil:'Ingeniero, empresario y consultor con más de veinte (20) años de experiencia en evaluación, venta y ejecución de proyectos de tecnología para diferentes industrias en Latinoamérica y el Caribe. Magíster en Gestión de la Innovación Empresarial, Certificado PMP, conferencista y consultor Internacional sobre Transformación Digital y Productiva e Industria 4.0, actualmente gerente del proyecto para el desarrollo de la plataforma CONECTIE y Director de Desarrollo de Negocios de la empresa Segen Group.',
             empresa:'SEGEN GROUP',
@@ -203,8 +203,7 @@ export const jueves = {
             lugar: 'Teleconferencia',
             avatar: AlveiroGoyeneche,      
         },
-        {   
-            nombre: 'Transformación digital mediante plataformas en la nube- Sala 3.', 
+        {   nombre: 'Reclutamiento automatizado, basado en Machine Learning- Sala 3.', 
             autor: 'Nelson Insignares Molina',
             perfil:'Magister en mercadeo universidad de los andes, Director de analítica en El Backoffice S.A.S.',
             empresa:'EL BACKOFFICE SAS',
@@ -285,7 +284,7 @@ export const viernes = {
             lugar: 'Teleconferencia',
             avatar: AlfredoOrdonez,
         },{   
-            nombre:'Reclutamiento automatizado, basado en Machine Learning - Sala 1',        
+            nombre:'Transformación digital mediante plataformas en la nube - Sala 1',        
             autor: 'José Alveiro Goyeneche Wilches',
             perfil:'Ingeniero, empresario y consultor con más de veinte (20) años de experiencia en evaluación, venta y ejecución de proyectos de tecnología para diferentes industrias en Latinoamérica y el Caribe. Magíster en Gestión de la Innovación Empresarial, Certificado PMP, conferencista y consultor Internacional sobre Transformación Digital y Productiva e Industria 4.0, actualmente gerente del proyecto para el desarrollo de la plataforma CONECTIE y Director de Desarrollo de Negocios de la empresa Segen Group.',
             empresa:'SEGEN GROUP',
@@ -294,8 +293,7 @@ export const viernes = {
             lugar: 'Teleconferencia',
             avatar: AlveiroGoyeneche,      
         },
-        {   
-            nombre: 'Transformación digital mediante plataformas en la nube- Sala 3.', 
+        {   nombre: 'Reclutamiento automatizado, basado en Machine Learning- Sala 3.', 
             autor: 'Nelson Insignares Molina',
             perfil:'Magister en mercadeo universidad de los andes, Director de analítica en El Backoffice S.A.S en El Backoffice S.A.S.',
             empresa:'EL BACKOFFICE SAS',

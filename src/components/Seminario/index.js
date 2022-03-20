@@ -62,6 +62,21 @@ class Simposio extends React.Component {
               <Button link="https://forms.gle/L824eAM6fCxnvrog9">
                   INSCRÍBETE AQUÍ
               </Button>
+           
+            </div>
+            <div className="simposio-top-support column">
+              <h2>Links para ingresar a los talleres especializados</h2>
+              <div className="support-logos row">
+               
+                
+                {/* <img src={logoSimposio} alt="simposio" width="210" /> */}
+              </div>
+              {/* <p>Inscripciones cerradas</p> 
+              https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform*/}
+               <Button link="https://suomaya.co/build/static/media/Links%20talleres.pdf">
+                  DESCARGA 
+              </Button>
+           
             </div>
           </div>
           <img 

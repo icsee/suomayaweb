@@ -73,6 +73,9 @@ class Simposio extends React.Component {
               <Button link="https://docs.google.com/forms/d/e/1FAIpQLSeDGZ2pKucJ0UqP8YDIewhcBzrzQm9kes7FjvimHU7TMIaBlw/viewform?vc=0&c=0&w=1&flr=0&gxids=7628">
                   INSCRÍBETE AQUÍ
               </Button>
+              <Button link="https://suomaya.co/build/static/media/Circular%20001%20de%202022.pdf">
+                  DESCARGA 
+              </Button>
             </div>
           </div>
           <img 
