@@ -4,7 +4,7 @@ import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
 import flyer from '../../assets/img/seminario.png'
-import flyer2 from '../../assets/img/poster1-01.png'
+import flyer2 from '../../assets/img/congreso2022.jpg'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -24,38 +24,26 @@ class Simposio extends React.Component {
       <div className="simposio">
         <section className="simposio-top row">
           <div className="simposio-top-info column">
-            <h1>VI SIMPOSIO DE CIENCIA INNOVACIÓN Y TECNOLOGÍA</h1>
-            <h2>GRUPO SUOMAYA</h2>
+            <h1>IV Congreso Internacional de Investigación aplicada</h1>
+            <h2>VII Simposio Internacional de Ciencia Innovación y tecnología</h2>
+            <h3>Nuevas economías y tendencias tecnológicas </h3>
             <p>
-              Este evento busca difundir las iniciativas, avances y resultados 
-              de los proyectos de investigación, desarrollo tecnológico e innovación 
-              alineados a las temáticas de investigación del grupo Suomaya, generados por
-              la academia y las empresas ganadoras de convocatorias de innovación, a la
-              comunidad SENA, SENNOVA y público en general.
+            Dentro de las políticas de Investigación para el Servicio Nacional de Aprendizaje, 
+            en el marco del sistema de Investigación SENNOVA, se plantea que la entidad debe procurar el desarrollo
+             de la investigación aplicada; que permita a los aprendices la capacidad de plantear y desarrollar soluciones 
+             a problemas que se enfoquen a mejorar la productividad de las empresas y el pais (SENA, 2014). En ese orden de 
+             ideas, el SENA actúa como una entidad de fomento con un rol protagónico en la escena del desarrollo tecnológico 
+             y la competitividad del país, que debe generar un conocimiento que permita retroalimentar los programas curriculares,
+              los proyectos en Tecnoparques y el sector productivo (SENA, 2014) Así las cosas, se plantea el IV Congreso 
+              Internacional de Investigación aplicada, nuevas economías y tendencias tecnológicas y VII Simposio Internacional de 
+              Ciencia Innovación y tecnología, tomando como eje articulador el concepto de "nuevas economías" que será desplegado 
+              a continuación.
+
               
               
               <br /> <br /> <strong>Agenda del evento: </strong>
-              <br />Julio 7: 
-              <br />Camilo Mendivelso 8:30 am - 9:00 am  🇨🇴
-              <br />Fabiola Velarde Galicia 9:00 am - 9:45 am  🇲🇽 
-              <br />Nick Neal-Useche 9:50 am - 10:35 am 🇬🇧
-              <br />Rogger O. Morán S. 10:40 am - 11:25 am 🇵🇪
-              <br />Jorge Santos 11:30 am - 12:15 pm 🇨🇴
-              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm 🇨🇴
-              <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm 🇨🇴
-              <br />
-              <br />Julio 8: 
-              <br />Juan Sebastian Daza 8:30 am - 10:30 am 🇨🇴
-              <br />Juan Manuel Aparicio Camargo  10:30 am - 11:30 am 🇨🇴             
-              <br />Hernan Eduardo Saldaña  11:30 am - 12:30 pm 🇨🇴
-              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm  🇨🇴
-              <br />Beatriz Botello 4:00 pm - 6:00 pm  🇨🇴
-              <br />
-              <br />Julio 9: 
-              <br />Juan Sebastian Daza  8:30 am - 10:30 am  🇨🇴 
-              <br />Jorge Gil Roa 10:30 am - 12:30 pm 🇨🇴
-              <br />Oscar Parra Baquero 2:00 pm - 4:00 pm 🇨🇴
-              <br />Jorge Eliécer Posada Pinzón 4:00 pm - 5:00 pm 🇨🇴
+              <br />PROXIMAMENTE 
+             
               <br />
               
             
@@ -70,12 +58,10 @@ class Simposio extends React.Component {
               </div>
               {/* <p>Inscripciones cerradas</p> 
               https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform*/}
-              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSeDGZ2pKucJ0UqP8YDIewhcBzrzQm9kes7FjvimHU7TMIaBlw/viewform?vc=0&c=0&w=1&flr=0&gxids=7628">
+              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSenu8ypkFOjQEJUN0O7Nxyc-J7oZkw-_277PVLbA8nkSVJRfQ/viewform">
                   INSCRÍBETE AQUÍ
               </Button>
-              <Button link="https://suomaya.co/build/static/media/Circular%20001%20de%202022.pdf">
-                  DESCARGA 
-              </Button>
+             
             </div>
           </div>
           <img 
@@ -86,12 +72,10 @@ class Simposio extends React.Component {
         </section>
         <hr className="line container" />
         <section className="simposio-agenda column">
-          <Agenda />
+        
         </section>
         
-        <Button link="https://www.youtube.com/channel/UCCRJH1Uau7xpxiKJE1S8ijw">
-                  ÚNETE AL EVENTO
-        </Button>
+       
       </div>
     )
   }
