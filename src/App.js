@@ -74,7 +74,7 @@ class App extends Component {
                     <Route path="/proyecto/interoperabilidad" render={() => <ProyectoInteroperabilidad />}/>
                     <Route path="/proyecto/paneles" render={() => <ProyectoPaneles />}/>
                     <Route path="/seminario" render={() => <Seminario />}/>
-                    <Route path="/simposio" render={() => <Simposio />}/>
+                    <Route path="/congreso" render={() => <Simposio />}/>
                     <Route path="/fotofilm" render={() => <Fotofilm />}/>
                     <Route path="/cortometraje" render={() => <Concurso category="cortometraje" />}/>
                     <Route path="/fotografia" render={() => <Concurso category="fotografia" />}/>
