@@ -17,13 +17,15 @@ import ProyectoLogisticaProveedorEdit from './components/Proyecto/Logistica/Prov
 import ProyectoLogisticaAlmacenes from './components/Proyecto/Logistica/Almacen/List'
 import ProyectoLogisticaAlmacenAdd from './components/Proyecto/Logistica/Almacen/Add'
 import ProyectoLogisticaAlmacenEdit from './components/Proyecto/Logistica/Almacen/Edit'
-
+import Proyectoraconocimientofacial from './components/Proyecto/reconocimientofacial'
 import ProyectoLogisticaProductos from './components/Proyecto/Logistica/Producto/List'
 import ProyectoLogisticaProductoAdd from './components/Proyecto/Logistica/Producto/Add'
 import ProyectoLogisticaProductoEdit from './components/Proyecto/Logistica/Producto/Edit'
-
+import Proyectochatoffline from './components/Proyecto/chatoffline'
+import Proyectorecoleccionllantas from './components/Proyecto/recoleccionllantas'
 import ProyectoInventarios from './components/Proyecto/Inventarios'
 import ProyectoInteroperabilidad from './components/Proyecto/Interoperabilidad'
+import Proyectoiotcognitivo from './components/Proyecto/iotcognitivo'
 import ProyectoPaneles from './components/Proyecto/Paneles'
 import Seminario from './components/Seminario'
 import Simposio from './components/Simposio'
@@ -32,6 +34,7 @@ import Footer from './components/Footer'
 import Semillero from './components/Semillero'
 import Fotofilm from './components/Fotofilm'
 import Concurso from './components/Concurso'
+
 import './App.css'
 import ProyectoLogisticaReporte from './components/Proyecto/Logistica/Reporte'
 
@@ -72,6 +75,11 @@ class App extends Component {
                     <Route path="/logistica/reporte" render={() => <ProyectoLogisticaReporte />}/>
                     <Route path="/proyecto/inventarios" render={() => <ProyectoInventarios />}/>                    
                     <Route path="/proyecto/interoperabilidad" render={() => <ProyectoInteroperabilidad />}/>
+                    <Route path="/proyecto/chatoffline" render={() => <Proyectochatoffline />}/>
+                    <Route path="/proyecto/recoleccionllantas" render={() => <  Proyectorecoleccionllantas />}/>
+                    <Route path="/proyecto/iotcognitivo" render={() => <  Proyectoiotcognitivo />}/>
+                    <Route path="/proyecto/reconocimientofacial" render={() => <  Proyectoraconocimientofacial />}/>
+                    
                     <Route path="/proyecto/paneles" render={() => <ProyectoPaneles />}/>
                     <Route path="/seminario" render={() => <Seminario />}/>
                     <Route path="/congreso" render={() => <Simposio />}/>

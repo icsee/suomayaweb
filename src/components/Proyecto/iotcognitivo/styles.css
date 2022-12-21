@@ -1,0 +1,42 @@
+
+
+.info h1{
+    color: var(--verde);
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+  .info h2{
+    color: var(--verde);
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .info p{
+    font-family: 'Calibri';
+    color: var(--gris);
+    margin: 10px 0 10px 0;
+    text-align: justify;
+  }
+.info{
+    margin: 20px 12% 2% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.map-area{
+  position: relative;
+  height: 15rem;
+  width: 40%;
+}
+.chart-area-p {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  padding: 20px 0px 90px 0px;
+}

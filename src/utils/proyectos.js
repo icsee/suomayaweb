@@ -1,14 +1,44 @@
 
-
+import iconChatoffline from '../assets/img/Rescatistas.png'
+import iconLlantaslogo from '../assets/img/LlantasLOGO.png'
 import iconLogistica from '../assets/img/proyectoBlockchain2.png'
 import iconBlockhain from '../assets/img/proyectoLogistica.png'
 import iconIOT from '../assets/img/proyectoIOT.png'
 import iconEnergia from '../assets/img/proyectoEnergia.png'
-
-
+import iconIotCognitivo from '../assets/img/IOT Cognitivo LOGO.png'
+import iconReconocimientoFacial from '../assets/img/Reconocimiento facial LOGO.png'
 
 export function getProyecto(proyecto){
     switch(proyecto){
+        case 'chatoffline': 
+            return {
+                title: 'Chat off-line ',
+                icon: iconChatoffline,
+                url: 'proyecto/chatoffline',
+                type:'intern'
+            };
+        case 'recoleccionllantas': 
+            return {
+                title: 'Sistema dashboard IoT para ',
+                icon: iconLlantaslogo,
+                url: 'proyecto/recoleccionllantas',
+                type:'intern'
+            };    
+        case 'iotcognitivo': 
+            return {
+                title: 'IoT Cognitivo ',
+                icon: iconIotCognitivo,
+                url: 'proyecto/iotcognitivo',
+                type:'intern'
+            };    
+
+        case 'sipro': 
+            return {
+                title: 'SIPRO ',
+                icon: iconReconocimientoFacial,
+                url: 'proyecto/reconocimientofacial',
+                type:'intern'
+            };         
         case 'logistica': 
             return {
                 title: 'Aplicación de un modelo logístico 4.0 para la gestión de inventarios de productos en cadena frio',

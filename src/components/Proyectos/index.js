@@ -4,7 +4,7 @@ import Button from '../Button'
 import {  getProyecto } from '../../utils/proyectos'
 import { Link } from 'react-router-dom'
 
-const listProyecos = ['logistica', 'blockchain', 'iot', 'energia']
+const listProyecos = ["chatoffline","recoleccionllantas","iotcognitivo","sipro", 'logistica', 'blockchain', 'iot', 'energia']
 
 class Proyectos extends React.Component {
   componentDidMount() {
@@ -21,11 +21,11 @@ class Proyectos extends React.Component {
                     <div className="proyecto">
                     <div className="itemproyecto row">
                       <img src={proyecto.icon} alt={proyecto.title} width="110px" height="130px" />
-                      <div>
+                    <div>
 
-                        <p> {proyecto.title}</p>
+                      <p> {proyecto.title}</p>
                       {proyecto.type == 'external' &&
-                          <a href={proyecto.url} target="_blank" >
+                          <a href={proyecto.url} target="_blank">
                           <input type ='button' value="Ir al proyecto" className="button small"/>
                           </a>  
                         
@@ -33,10 +33,10 @@ class Proyectos extends React.Component {
                       {proyecto.type == 'intern' &&
                           <Button variant="small" route={proyecto.url}>
                             Ir al proyecto
-                            </Button>  
+                          </Button>  
                         
                       }
-
+                       
                        
                         
                       </div>
