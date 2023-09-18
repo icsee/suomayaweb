@@ -24,7 +24,7 @@ class Simposio extends React.Component {
       <div className="simposio">
         <section className="simposio-top row">
           <div className="simposio-top-info column">
-            <h1>VIII Congreso Internacional de Investigación aplicada</h1>
+            <h1>V Congreso Internacional de Investigación aplicada</h1>
             <h2>Ecosistema digital</h2>
             <h3>Sus aportes para la generación de conocimiento frente a los nuevos retos </h3>
             <p>
