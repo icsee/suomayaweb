@@ -4,7 +4,7 @@ import Button from '../Button'
 import {  getProyecto } from '../../utils/proyectos'
 import { Link } from 'react-router-dom'
 
-const listProyecos = ["chatoffline","recoleccionllantas","iotcognitivo","sipro", 'logistica', 'blockchain', 'iot', 'energia']
+const listProyecos = ["chatoffline","recoleccionllantas","iotcognitivo","sipro", 'logistica', 'blockchain', 'iot', 'energia', 'desinfeccion']
 
 class Proyectos extends React.Component {
   componentDidMount() {

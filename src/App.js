@@ -37,6 +37,7 @@ import Concurso from './components/Concurso'
 
 import './App.css'
 import ProyectoLogisticaReporte from './components/Proyecto/Logistica/Reporte'
+import Desinfeccion from './components/Proyecto/desinfeccion';
 
 const semilleros = ['innovatics', 'siclog', 'neurocomarketing', 'siam', 'aleph', 'industriascreativas']
 
@@ -60,6 +61,7 @@ class App extends Component {
                     <Route path="/revista" render={() => <Revista />}/>
                     <Route path="/proyectos" render={() => <Proyectos />}/>
                     <Route path="/proyecto/logistica" render={() => <ProyectoLogistica />}/>
+                    <Route path="/proyecto/desinfeccion" render={() => <Desinfeccion />}/>
                     <Route path="/logistica/clientes" render={() => <ProyectoLogisticaClientes />}/>
                     <Route path="/logistica/cliente-crear" render={() => <ProyectoLogisticaClientesAdd />}/>
                     <Route path="/logistica/cliente-editar/:id" component={ProyectoLogisticaClientesEdit }/>

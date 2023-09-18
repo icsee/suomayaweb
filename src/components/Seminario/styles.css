@@ -46,12 +46,12 @@
   justify-content: space-around !important;
 }
 
-.flyer{
+/*.flyer{
   width: 600px;
   height: 900px;
   margin-left: 50px;
   
-}
+}*/
 
 .simposio-pics{
   margin: 45px 0 0 0;
@@ -332,10 +332,10 @@
     width: 70vw;
   }
 
-  .flyer{
+/*  .flyer{
     width: 70vw;
     margin: 20px 0 0 0;
-  }
+  }*/
 
   .simposio-top-info h1{
     text-align: center;

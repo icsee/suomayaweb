@@ -3,6 +3,7 @@ import iconChatoffline from '../assets/img/Rescatistas.png'
 import iconLlantaslogo from '../assets/img/LlantasLOGO.png'
 import iconLogistica from '../assets/img/proyectoBlockchain2.png'
 import iconBlockhain from '../assets/img/proyectoLogistica.png'
+import iconDesinfeccion from '../assets/img/logo_desinfeccion.png'
 import iconIOT from '../assets/img/proyectoIOT.png'
 import iconEnergia from '../assets/img/proyectoEnergia.png'
 import iconIotCognitivo from '../assets/img/IOT Cognitivo LOGO.png'
@@ -67,12 +68,19 @@ export function getProyecto(proyecto){
             url: 'proyecto/paneles',
             type:'intern'
         };
+        case 'desinfeccion':
+            return {
+                title: 'Desinfección',
+                icon: iconDesinfeccion,
+                url: 'proyecto/desinfeccion',
+                type:'intern'
+            };
         default: 
             return {
                 title: 'default',
                 icon: iconLogistica,
-                url: 'proyecto/logistica'
-                ,type:'intern'
+                url: 'proyecto/logistica',
+                type:'intern'
             };
     }
     

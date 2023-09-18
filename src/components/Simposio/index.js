@@ -4,7 +4,7 @@ import Agenda from './Agenda'
 import './styles.css'
 // import flyer from '../../assets/img/simposio.jpg'
 import flyer from '../../assets/img/seminario.png'
-import flyer2 from '../../assets/img/congreso2022.jpg'
+import flyer2 from '../../assets/img/congreso_viii.jpg'
 // import logoSimposio from '../../assets/img/simposio2.png'
 import sena from '../../assets/img/sena.png'
 import sennova from '../../assets/img/sennova.png'
@@ -24,9 +24,9 @@ class Simposio extends React.Component {
       <div className="simposio">
         <section className="simposio-top row">
           <div className="simposio-top-info column">
-            <h1>IV Congreso Internacional de Investigación aplicada</h1>
-            <h2>VII Simposio Internacional de Ciencia Innovación y tecnología</h2>
-            <h3>Nuevas economías y tendencias tecnológicas </h3>
+            <h1>VIII Congreso Internacional de Investigación aplicada</h1>
+            <h2>Ecosistema digital</h2>
+            <h3>Sus aportes para la generación de conocimiento frente a los nuevos retos </h3>
             <p>
             Dentro de las políticas de Investigación para el Servicio Nacional de Aprendizaje, 
             en el marco del sistema de Investigación SENNOVA, se plantea que la entidad debe procurar el desarrollo
@@ -45,7 +45,7 @@ class Simposio extends React.Component {
               <br />PROXIMAMENTE 
              
               <br />
-              
+
             
               <br />
             </p>
@@ -58,10 +58,10 @@ class Simposio extends React.Component {
               </div>
               {/* <p>Inscripciones cerradas</p> 
               https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform*/}
-              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSfLct1yvvYXjHdhIfdFIf7IftrHE7Uf7OsZc6PUVLZmwnhzRg/viewform">
+              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSfkPD5GweYBKQne7vRjImvjiZ67Ru1DELn-4f6K1tlBnmHfVA/viewform">
                   INSCRÍBETE AQUÍ
               </Button>
-             
+
             </div>
           </div>
           <img 
