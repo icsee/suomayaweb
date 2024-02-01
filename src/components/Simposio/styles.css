@@ -1,19 +1,23 @@
 .simposio {
-  width: 1100px;
+  width: 1200px;
   padding: 45px 0;
   margin: 0 auto;
   /* border: 1px solid red; */
 }
 
+.qr_formulario {
+  margin: 15px;
+}
+
 .simposio-top {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .simposio-top-info{
-  width: 600px;
+  padding: 10px;
 }
 
-.simposio-top-info h1{
+.simposio-top h1{
   color: var(--verde);
   font-family: 'Myriad Pro';
   font-weight: bold;
@@ -30,7 +34,7 @@
 }
 
 .simposio-top-support{
-   width: 100%;
+   width: 600px;
 }
 
 .simposio-top-support h2{
@@ -47,8 +51,8 @@
 }
 
 .flyer{
-  width: 550px;
-  margin-left: 70px;
+  width: 100%;
+  /*margin-left: 70px;*/
 }
 
 .simposio-pics{
@@ -361,5 +365,11 @@
   .day-card-details h3 {
     text-align: center;
   }
-  
+
+}
+
+.sectionSimposio {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
 }

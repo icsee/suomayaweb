@@ -4,6 +4,8 @@ import iconLlantaslogo from '../assets/img/LlantasLOGO.png'
 import iconLogistica from '../assets/img/proyectoBlockchain2.png'
 import iconBlockhain from '../assets/img/proyectoLogistica.png'
 import iconDesinfeccion from '../assets/img/logo_desinfeccion.png'
+import iconIotCultivos from '../assets/img/iot-en-cultivos.png'
+import iconVisionArtificial from '../assets/img/vision-artificial.png'
 import iconIOT from '../assets/img/proyectoIOT.png'
 import iconEnergia from '../assets/img/proyectoEnergia.png'
 import iconIotCognitivo from '../assets/img/IOT Cognitivo LOGO.png'
@@ -73,6 +75,20 @@ export function getProyecto(proyecto){
                 title: 'Desinfección',
                 icon: iconDesinfeccion,
                 url: 'proyecto/desinfeccion',
+                type:'intern'
+            };
+        case 'visionartificial':
+            return {
+                title: 'Visión artificial - Aplicación web para el control y reporte de asistencia en aulas presenciales mediante el uso de visión artificial  ',
+                icon: iconVisionArtificial,
+                url: 'proyecto/vision-artificial',
+                type:'intern'
+            };
+        case 'iotcultivos':
+            return {
+                title: 'Iot en Cultivos - Solución integral para incrementar competitividad y productividad de los cultivos agrícolas, integrando tecnologías de Machine Learning e IoT',
+                icon: iconIotCultivos,
+                url: 'proyecto/iot-en-cultivos',
                 type:'intern'
             };
         default: 

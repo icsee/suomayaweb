@@ -38,6 +38,8 @@ import Concurso from './components/Concurso'
 import './App.css'
 import ProyectoLogisticaReporte from './components/Proyecto/Logistica/Reporte'
 import Desinfeccion from './components/Proyecto/desinfeccion';
+import VisionArtificial from './components/Proyecto/visionartificial';
+import IotCultivos from './components/Proyecto/iotCultivos';
 
 const semilleros = ['innovatics', 'siclog', 'neurocomarketing', 'siam', 'aleph', 'industriascreativas']
 
@@ -62,6 +64,8 @@ class App extends Component {
                     <Route path="/proyectos" render={() => <Proyectos />}/>
                     <Route path="/proyecto/logistica" render={() => <ProyectoLogistica />}/>
                     <Route path="/proyecto/desinfeccion" render={() => <Desinfeccion />}/>
+                    <Route path="/proyecto/vision-artificial" render={() => <VisionArtificial />}/>
+                    <Route path="/proyecto/iot-en-cultivos" render={() => <IotCultivos />}/>
                     <Route path="/logistica/clientes" render={() => <ProyectoLogisticaClientes />}/>
                     <Route path="/logistica/cliente-crear" render={() => <ProyectoLogisticaClientesAdd />}/>
                     <Route path="/logistica/cliente-editar/:id" component={ProyectoLogisticaClientesEdit }/>

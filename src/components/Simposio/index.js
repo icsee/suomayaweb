@@ -1,13 +1,13 @@
-import React from 'react'
-import Button from '../Button'
-import Agenda from './Agenda'
-import './styles.css'
+import React from 'react';
+import Button from '../Button';
+import './styles.css';
 // import flyer from '../../assets/img/simposio.jpg'
-import flyer from '../../assets/img/seminario.png'
-import flyer2 from '../../assets/img/congreso_viii.jpg'
+import flyer2 from '../../assets/img/congreso_viii.jpg';
 // import logoSimposio from '../../assets/img/simposio2.png'
-import sena from '../../assets/img/sena.png'
-import sennova from '../../assets/img/sennova.png'
+import sena from '../../assets/img/sena.png';
+import sennova from '../../assets/img/sennova.png';
+import qr from '../../assets/img/qr_formulario.jpg';
+import agenda from '../../assets/img/agenda.png';
 // import foto1 from '../../assets/img/foto1.jpg'
 // import foto2 from '../../assets/img/foto2.jpg'
 // import foto3 from '../../assets/img/foto3.jpg'
@@ -16,70 +16,104 @@ import sennova from '../../assets/img/sennova.png'
 // import foto6 from '../../assets/img/foto6.jpg'
 
 class Simposio extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0,0)
-  }
-  render() {
-    return (
-      <div className="simposio">
-        <section className="simposio-top row">
-          <div className="simposio-top-info column">
-            <h1>V Congreso Internacional de Investigación aplicada</h1>
-            <h2>Ecosistema digital</h2>
-            <h3>Sus aportes para la generación de conocimiento frente a los nuevos retos </h3>
-            <p>
-            Dentro de las políticas de Investigación para el Servicio Nacional de Aprendizaje, 
-            en el marco del sistema de Investigación SENNOVA, se plantea que la entidad debe procurar el desarrollo
-             de la investigación aplicada; que permita a los aprendices la capacidad de plantear y desarrollar soluciones 
-             a problemas que se enfoquen a mejorar la productividad de las empresas y el pais (SENA, 2014). En ese orden de 
-             ideas, el SENA actúa como una entidad de fomento con un rol protagónico en la escena del desarrollo tecnológico 
-             y la competitividad del país, que debe generar un conocimiento que permita retroalimentar los programas curriculares,
-              los proyectos en Tecnoparques y el sector productivo (SENA, 2014) Así las cosas, se plantea el IV Congreso 
-              Internacional de Investigación aplicada, nuevas economías y tendencias tecnológicas y VII Simposio Internacional de 
-              Ciencia Innovación y tecnología, tomando como eje articulador el concepto de "nuevas economías" que será desplegado 
-              a continuación.
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
 
-              
-              
-              <br /> <br /> <strong>Agenda del evento: </strong>
-              <br />PROXIMAMENTE 
-             
-              <br />
+	render() {
+		return (
+			<div className="simposio">
+				<section className="simposio-top">
+					<h1>V Congreso Internacional de Investigación aplicada</h1>
 
-            
-              <br />
-            </p>
-            <div className="simposio-top-support column">
-              <h2>Con el apoyo de:</h2>
-              <div className="support-logos row">
-                <img src={sena} alt="sena" width="90" />
-                <img src={sennova} alt="sennova" width="210" />
-                {/* <img src={logoSimposio} alt="simposio" width="210" /> */}
-              </div>
-              {/* <p>Inscripciones cerradas</p> 
-              https://docs.google.com/forms/d/e/1FAIpQLSeZa4JonFjq7s7oDPnDvMgRBAgRlPvMzPnNDFYcCo72-D0C6w/viewform*/}
-              <Button link="https://docs.google.com/forms/d/e/1FAIpQLSfkPD5GweYBKQne7vRjImvjiZ67Ru1DELn-4f6K1tlBnmHfVA/viewform">
-                  INSCRÍBETE AQUÍ
-              </Button>
 
-            </div>
-          </div>
-          <img 
-            className="flyer"
-            alt="flyer"
-            src={flyer2}
-          />
-        </section>
-        <hr className="line container" />
-        <section className="simposio-agenda column">
-        
-        </section>
-        
-       
-      </div>
-    )
-  }
+				</section>
+				<section className="sectionSimposio">
+					<div className="simposio-top-info column">
+						<h2>Ecosistema digital</h2>
+						<h3>Sus aportes para la generación de conocimiento frente a los nuevos retos </h3>
+						<p>
+							El Servicio Nacional de Aprendizaje, como entidad pública de formación integral, se esfuerza
+							por desarrollar habilidades en sus aprendices que les capaciten para proponer y ejecutar
+							soluciones dirigidas a mejorar la productividad y competitividad tanto a nivel empresarial
+							como nacional. Con el objetivo de contribuir activamente a este propósito y generar
+							conocimiento que alimente de manera efectiva los programas curriculares, los proyectos en
+							Tecnoparques y el sector productivo, el Grupo de Investigación Suomaya presenta el V
+							Congreso Internacional de Investigación Aplicada 'Ecosistemas Digitales' y el VIII Simposio
+							Internacional de Ciencia, Innovación y Tecnología.
+						</p>
+						<p>
+							Este año, el tema central del evento serán los Ecosistemas Digitales, un concepto esencial
+							que permitirá identificar los elementos fundamentales para la creación de entornos propicios
+							que faciliten el desarrollo de actividades dinámicas de forma virtual, en el contexto de la
+							creciente interconectividad digital que caracteriza la era actual.
+
+
+							<br/> <br/> <strong>Agenda del evento: </strong>
+							<br/>PROXIMAMENTE
+
+							<br/>
+
+
+							<br/>
+						</p>
+					</div>
+
+					<div className="simposio-top-info column">
+						<img
+							className="flyer"
+							alt="flyer"
+							src={flyer2}
+						/>
+					</div>
+				</section>
+
+				<hr className="line container"/>
+
+				<section className="sectionSimposio">
+					<div className="simposio-top-support column">
+						<h2>Con el apoyo de:</h2>
+						<div className="support-logos row">
+							<img src={sena}
+							     alt="sena"
+							     width="90"
+							/>
+							<img src={sennova}
+							     alt="sennova"
+							     width="210"
+							/>
+							{/* <img src={logoSimposio} alt="simposio" width="210" /> */}
+						</div>
+
+						<img src={qr}
+						     alt="qr"
+						     width="210"
+						     className="qr_formulario"
+						/>
+
+						<Button link="https://forms.gle/P92Nf5MEd35JVsLF7">
+							INSCRÍBETE AQUÍ
+						</Button>
+					</div>
+
+					<div className="simposio-top-support column">
+						<img src={agenda}
+						     alt="qr"
+						     width="150"
+						     className="qr_formulario"
+						/>
+
+						<Button link="https://suomaya.co/build/static/media/agenda.pdf">
+							DESCARGAR
+						</Button>
+					</div>
+				</section>
+
+
+			</div>
+		);
+	}
 }
 
 
-export default Simposio
+export default Simposio;
