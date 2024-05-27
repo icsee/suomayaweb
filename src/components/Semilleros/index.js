@@ -4,7 +4,7 @@ import './styles.css'
 import { getLinea } from '../../utils/lineas'
 
 //const lineas = ['logistica', 'mercadeo', 'creativas', 'tics']
-const lineas = ['logistica', 'tics']
+const lineas = ['logistica','mercadeo','tics']
 
 class Semilleros extends React.Component {
   componentDidMount() {

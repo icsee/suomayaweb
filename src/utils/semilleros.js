@@ -9,6 +9,8 @@ import innovatics from '../assets/img/Innovatics2.png'
 import siam from '../assets/img/siam.png'
 import neurocomarketing from '../assets/img/neurocomarketing.png'
 import industriasc from '../assets/img/ic.png'
+import avatarFredyUrrea from '../assets/img/FREDDY_URREA_FOTO.jpg'
+import avatarFredyIsaza from '../assets/img/FELIPE_ISAZA_FOTO.jpg'
 
 import Nelson from '../assets/img/nelson.png'
 const getSemillero = (semillero) => {
@@ -112,32 +114,21 @@ const getSemillero = (semillero) => {
     return {
       logo: aleph,
       name: 'Aleph',
-      contact: 'clapar@misena.edu.co',
-      description: 'El semillero de investigación ALEPH tiene como fin fomentar la investigación formativa mediante un espacio académico multidisciplinario en donde estudiantes y los instructores se unan en la búsqueda de nuevos conocimientos, generando proyectos que ayuden a resolver problemáticas de las empresas a nivel nacional. Realizando una alianza entre los empresarios, diferentes semilleros de investigación SENA y universidades.',
+      contact: 'furrea@sena.edu.co',
+      description: 'El semillero Aleph es el semillero del área de mercadeo del CGMLTI y ha centrado su accionar en la línea, marketing holístico como generación de valor para el sector empresarial en los mercados.  Desde esta línea, y teniendo en cuenta el alcance del concepto valor en el contexto colombiano, se vienen desarrollando proyectos orientados al reconocimiento, profundización y teorización sobre el marketing social, y, desde un enfoque investigación, acción, participación proyectos con comunidades, esto haciendo uso de endomarketing, el marketing cultural y el marketing digital.  También se viene trabajando, desde el proyecto INHOUSE, en la generación de soluciones de diseño de piezas publicitarias y audiovisuales para el centro de formación.  Todos los proyectos son interdisciplinarios e interáreas.  Allí se involucran:  Mercadeo, Industrias Creativas y Teleinformática. ',
       team: [
         {
-          name: 'Claudia Patricia Ramírez',
-          mail: 'clapar@misena.edu.co',
-          detail: 'Especialista en marketing',
-          avatar: avatar,
+          name: 'Freddy Urrea Urrea',
+          mail: 'furrea@sena.edu.co',
+          detail: 'Magíster en Educación',
+          avatar: avatarFredyUrrea,
         },
-        {
-          name: 'Juan Carlos Saavedra',
-          mail: 'jauank@misena.edu.co',
-          detail: 'Especialista en marketing',
-          avatar: avatar,
-        },
+        
         {
           name: 'Felipe Isaza',
           mail: 'felipeisaza@sena.edu.co',
           detail: 'Especialista en marketing',
-          avatar: avatar,
-        },
-        {
-          name: 'Gonzalo Salgado',
-          mail: 'gonzalosalgado@sena.edu.co',
-          detail: 'Especialista en marketing',
-          avatar: avatar,
+          avatar: avatarFredyIsaza,
         }
       ]
     }
