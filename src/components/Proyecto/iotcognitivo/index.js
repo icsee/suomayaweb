@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import Button from "../../Button"
-import video from '../../../assets/video/COGNITIVO.mp4'
+
 import ReactPlayer from 'react-player'
 import SockJS from 'sockjs-client'
 import Stomp from 'stompjs'
@@ -47,13 +47,7 @@ class Proyectoiotcognitivo extends React.Component {
 El proyecto tiene como objetivo administrar un sistema de energía fotovoltaica y eólica, analizando las diferencias cuando se usan paneles rígidos, paneles flexibles y generadores eólicos, Esta administración se hará a través de sensores que harán la medición de los diferentes parámetros y su compilación se hará a través de IoT. De esta forma, el usuario final podrá estar enterado de los valores de los parámetros que se generan en el sistema y tomar las decisiones adecuadas.
 
 </p>
-              <ReactPlayer
-                
-                url= {video}
-               
-                controls = {true}
-
-                />
+              
             {//<iframe src="https://sebasapk.github.io/Paneles-Solares/" height="700" width="1000" frameborder="0"></iframe>
           }
             

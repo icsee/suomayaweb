@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import ReactPlayer from 'react-player'
-import video from '../../../assets/video/videoLogistica.mp4'
+
 import MenuLogistica from './Menu'
 
 class ProyectoLogistica extends React.Component {
@@ -21,13 +21,7 @@ class ProyectoLogistica extends React.Component {
           <section  className="column">          
             <div className={tipo}>   
             <div className={name}>              
-            <ReactPlayer
-                
-                url= {video}
-               
-                controls = {true}
-
-                />
+           
                 </div>
                 <div>
                 <p>
