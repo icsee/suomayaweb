@@ -3,16 +3,17 @@ import avatar from '../assets/img/avatar.png'
 import avatarCristina from '../assets/img/AvatarCristinaRamírez.PNG'
 import avatarMonica from '../assets/img/AvatarMonicaDiaz.PNG'
 import avatarfb from '../assets/img/facebook.jpg'
+import avatarcristian from '../assets/img/fotocristian.jpeg'
 import avatarweb from '../assets/img/paginaweb.png'
 import aleph from '../assets/img/aleph.png'
 import innovatics from '../assets/img/Innovatics2.png'
 import siam from '../assets/img/siam.png'
 import neurocomarketing from '../assets/img/neurocomarketing.png'
 import industriasc from '../assets/img/ic.png'
-import avatarFredyUrrea from '../assets/img/FREDDY_URREA_FOTO.jpg'
+import avatarFredyUrrea from '../assets/img/fredy_urrea.jpeg'
 import avatarFredyIsaza from '../assets/img/FELIPE_ISAZA_FOTO.jpg'
 
-import Nelson from '../assets/img/nelson.png'
+import Nelson from '../assets/img/nelson.jpeg'
 const getSemillero = (semillero) => {
   if(semillero === 'innovatics') {
     return {
@@ -24,26 +25,20 @@ const getSemillero = (semillero) => {
         {
           name: 'Nelson Giovanni Agudelo C.',
           mail: 'nagudeloc@sena.edu.co',
-          detail: 'Especialista en Telecomunicaciones y Teleinformática',
+          detail: 'Maestría en ciencias de la información y las comunicaciones',
           avatar: Nelson  ,
         },
         {
-          name: 'David Cáceres',
-          mail: 'dlcaceres04@misena.edu.co',
-          detail: 'Especialista en teleinformática',
+          name: 'Juan Carlos Amezquita',
+          mail: 't.amezquita.juancarlos@gmail.com',
+          detail: 'Maestría en arquitectura de software',
           avatar: avatar,
         },
         {
-          name: 'Gonzalo Salgado ',
-          mail: 'gonzalo8416@misena.edu.co',
-          detail: 'Diseñador Gráfico  ',
-          avatar: avatar,
-        },
-        {
-          name: 'Julián Urrea ',
-          mail: 'jrurrea0@misena.edu.co',
-          detail: 'Magister en Programación de Videojuegos',
-          avatar: avatar,
+          name: 'Christian Rojas Diaz',
+          mail: 'crissdiaz@misena.edu.co',
+          detail: 'Ingeniero de sistemas',
+          avatar: avatarcristian,
         }
       ]
     }

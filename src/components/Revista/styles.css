@@ -30,6 +30,73 @@
   margin: 35px 0;
 }
 
+
+.revista-team{
+  width: 100%;
+  background: var(--verde) url('../../assets/img/suomaya2.png');
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.team-content{
+  width: 1100px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.team-content h1{
+  margin: 0;
+  color: white;
+  font-family: 'Calibri';
+  font-size: 28px;
+  letter-spacing: 2px;
+  align-self: flex-start;
+}
+
+.team-content a{
+  margin: 0;
+  color: white;
+ 
+}
+
+.team-members{
+  justify-content: space-between !important;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+
+.revista-join {
+ margin-bottom: 40px;
+}
+
+.revista-join h1{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 0 35px 0;
+}
+
+.revista-join p {
+  color: var(--gris);
+  font-family: 'Calibri';
+  font-size: 19px;
+  margin: 0;
+  width: 1000px;
+  text-align: center;
+}
+
+.revista-join h2{
+  color: var(--naranja);
+  font-family: 'Calibri';
+  font-size: 28px;
+  text-align: center;
+  margin: 35px 0 0 0;
+}
+
+
 @media screen and (max-width: 1200px){
   .revista{
     width: 70vw;
@@ -37,6 +104,23 @@
 
   .revista p{
     text-align: center;
+  }
+  .revista-join h1{
+    font-size: 32px;
+  }
+
+  .revista-join p{
+    font-size: 18px;
+    width: 800px;
+  }
+
+  .revista-join h2{
+    font-size:30px;
+  }
+
+  .member{
+    margin-top: 8px;
+    margin-bottom: 20px;
   }
 }
 
@@ -53,6 +137,23 @@
     width: 70vw;
     height: 400px;
   }
+  .revista-join h1{
+    font-size: 32px;
+  }
+
+  .revista-join p{
+    font-size: 18px;
+    width: 600px;
+  }
+
+  .revista-join h2{
+    font-size:30px;
+  }
+
+  .member{
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 660px){
@@ -62,6 +163,24 @@
 
   .revista p{
     font-size: 15px;
+  }
+  .revista-join h1{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .revista-join p{
+    font-size: 165x;
+    width: 500px;
+  }
+
+  .revista-join h2{
+    font-size: 22px;
+  }
+
+  .member{
+    margin-top: 8px;
+    margin-bottom: 20px;
   }
 
 }
@@ -75,7 +194,7 @@
     font-size: 14px;
     margin: 25px 0;
   }
-
+  
 }
 
 @media screen and (max-width: 530px){
@@ -87,4 +206,23 @@
   .revista img {
     width: 230px;
   }
+
+  .revista-join h1{
+    font-size: 22px;
+  }
+
+  .revista-join p{
+    font-size: 12px;
+    width: 300px;
+  }
+
+  .revista-join h2{
+    font-size: 20px;
+  }
+
+  .member{
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
 }
+

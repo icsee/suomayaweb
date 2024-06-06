@@ -37,7 +37,7 @@ const Navbar = ({variant, type}) => {
             to='/fotofilm'
             activeClassName="selected"
             >
-            Fotofilm
+            Concurso
           </NavLink>
         </div>
         <Hamburger />
