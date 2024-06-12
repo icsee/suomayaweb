@@ -1,6 +1,6 @@
 .fotofilm {
   width: 1100px;
-  padding: 45px 0;
+  padding: 5px 0;
   margin: 0 auto;
 }
 
@@ -8,7 +8,9 @@
   width: 800px;
   margin: 0 auto;
 }
-
+.fotofilm-content-text{
+  margin-bottom: 30px;
+}
 .fotofilm-header h1{
   color: var(--verde);
   font-family: 'Myriad Pro';
@@ -31,7 +33,7 @@
   margin: 0 auto;
 }
 
-.fotofilm-content h2{
+.fotofilm-content-text h2{
   color: var(--verde);
   font-family: 'Myriad Pro';
   font-weight: bold;
@@ -45,9 +47,33 @@
   margin: 0 auto;
   justify-content: space-between !important;
 }
+.fotofilm img{
+  margin: 0px 0px 30px ;
+}
 
 .fotofilm-category img{
   margin: 20px 0;
+}
+
+
+.fotofilm-winners {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Esto centrará todo el contenido del contenedor verticalmente */
+}
+
+
+.fotofilm-winners img{
+  margin: 0 auto; 
+}
+
+.fotofilm-winners h2{
+  color: var(--verde);
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 35px;
+  margin: 35px 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -69,13 +95,13 @@
 }
 
 @media screen and (max-width: 700px) {
-  .fotofilm h1{
+  .fotofilm-content-text h1{
     font-size: 30px;
   }
-  .fotofilm h2{
+  .fotofilm-content-text h2{
     font-size: 25px;
   }
-  .fotofilm p{
+  .fotofilm-content-text p{
     font-size: 17px;
   }
 }

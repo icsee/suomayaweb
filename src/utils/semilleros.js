@@ -4,6 +4,7 @@ import avatarCristina from '../assets/img/AvatarCristinaRamírez.PNG'
 import avatarMonica from '../assets/img/AvatarMonicaDiaz.PNG'
 import avatarfb from '../assets/img/facebook.jpg'
 import avatarcristian from '../assets/img/fotocristian.jpeg'
+import avatarJuan from '../assets/img/juanAmezquit.jpeg'
 import avatarweb from '../assets/img/paginaweb.png'
 import aleph from '../assets/img/aleph.png'
 import innovatics from '../assets/img/Innovatics2.png'
@@ -32,7 +33,7 @@ const getSemillero = (semillero) => {
           name: 'Juan Carlos Amezquita',
           mail: 't.amezquita.juancarlos@gmail.com',
           detail: 'Maestría en arquitectura de software',
-          avatar: avatar,
+          avatar: avatarJuan,
         },
         {
           name: 'Christian Rojas Diaz',
