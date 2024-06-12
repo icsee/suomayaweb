@@ -120,38 +120,40 @@ class Fotofilm extends React.Component {
           <div className="team-content column">
             <h1>Conozca a los ganadores:</h1>
             <div className="team-members row">
-            <div className="member column">
+            <div className="member column memberFototilm">
               <img src={ganador1} alt="avatar" />
-              <p className="member-name">Aprendiz</p>
-             <p className="member-detail"></p>
-             
+              <p className="member-name">Daniel Santiago López Isaza</p>
+             <p className="member-detail">santiagolopez10d@gmail.com</p>
+             <p className="member-detail2">Centro de gestion de mercados, Logistica y Tecnologias de la Información</p>
             </div>
-            <div className="member column">
+            <div className="member column memberFototilm">
               <img src={ganador2} alt="avatar" />
-              <p className="member-name">Aprendiz</p>
+              <p className="member-name">Leandro Jossue Ramírez Vezga</p>
             
-              <p className="member-detail"></p>
-             
+              <p className="member-detail">developer.leandro.ramirez@gmail.com</p>
+              <p className="member-detail2">Tecnólgo en Análisis y Desarrollo de Sistemas de Información</p>
             </div>
-            <div className="member column">
+            <div className="member column memberFototilm">
               <img src={ganador3} alt="avatar" />
-              <p className="member-name">Aprendiz</p>
+              <p className="member-name">Cristian Humberto Rangel Buitrago</p>
             
-              <p className="member-detail"></p>
-             
+              <p className="member-detail">rangelcristian200217@gmail.com </p>
+              <p className="member-detail2">Tecnólgo en Análisis y Desarrollo de Sistemas de Información</p>
             </div>
-            <div className="member column">
+            <div className="member column memberFototilm">
               <img src={ganador4} alt="avatar" />
-              <p className="member-name">Aprendiz</p>
+              <p className="member-name">Freddy Alfonso Henríquez Ardila</p>
             
-              <p className="member-detail"></p>
-             
+              <p className="member-detail">freddy.aha@gmail.com </p>
+              <p className="member-detail2">Técnico en Construcción, Mantenimiento y Reparación de Estructuras en Guadua </p>
+            
             </div>
-            <div className="member column">
+            <div className="member column memberFototilm">
               <img src={ganador5} alt="avatar" />
-              <p className="member-name">Aprendiz</p>
+              <p className="member-name">Gabriel Eduardo Masutier Robayo</p>
             
-              <p className="member-detail"></p>
+              <p className="member-detail">gabrielmasutier@gmail.com</p>
+              <p className="member-detail2">Programación para Analitica de Datos</p>
              
             </div>
             
