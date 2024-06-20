@@ -30,6 +30,15 @@
   margin: 35px 0;
 }
 
+.imgrevista {
+  border-radius: 0px !important;
+}
+.revista-name{
+  margin: 8px 0 !important;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
 
 .revista-team{
   width: 100%;
