@@ -5,7 +5,7 @@
 }
 
 .revista img{
-  width: 300px;
+  width: 500px;
 }
 
 .revista p{
@@ -39,7 +39,9 @@
   font-weight: bold;
 }
 
-
+.revista-redes{
+width: 100px !important;
+}
 .revista-team{
   width: 100%;
   background: var(--verde) url('../../assets/img/suomaya2.png');

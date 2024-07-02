@@ -4,7 +4,7 @@ import avatarfb from '../../assets/img/facebook.jpg'
 import logoig from '../../assets/img/fondo_ig.jpeg'
 import latindex from '../../assets/img/latindex.png'
 import google from '../../assets/img/google.jpg'
-import correo from '../../assets/img/correo.png'
+import correo from '../../assets/img/correo2.jpeg'
 import Button from '../Button'
 import './styles.css'
 
@@ -57,21 +57,21 @@ class Revista extends React.Component {
             <h1>Contáctenos:</h1>
             <div className="team-members row">
             <div className="member column">
-              <img src={avatarfb} alt="avatar" />
+              <img src={avatarfb} alt="avatar" className="revista-redes" />
               <p className="member-name">Facebook</p>
               <a href='https://www.facebook.com/revistaretosena/' target="_blank"><p className="member-detail">@Revistaretosena</p></a>
              
             </div>
             <div className="member column">
-              <img src={correo} alt="avatar" className='correoimg' />
+              <img src={correo} alt="avatar" className="revista-redes" />
               <p className="member-name">Correo</p>
               <p className="member-detail">rrevistareto@misena.edu.co</p>
              
             </div>
             
             <div className="member column">
-              <img src={logoig} alt="avatar" />
-              <p className="member-name">Instagram</p>
+              <img src={logoig} alt="avatar" className="revista-redes" />
+              <p className="member-name" >Instagram</p>
               <a href='https://instagram.com/revistaretosena' target="_blank">
               <p className="member-detail">@Revistaretosena</p>
               </a>
